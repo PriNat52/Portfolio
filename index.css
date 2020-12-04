@@ -1,0 +1,33 @@
+body{
+  margin-top: auto;
+  padding: 340px 50px 50px 520px;
+  color: brown;
+  background-image: url(retrosupply.jpg);
+  background-size: cover;
+  font-family: cursive;
+  font-size: 18px;
+}
+
+a{
+  color: olive;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(214, 122, 127);
+  text-decoration: underline;
+}
+
+button{
+  padding: 10px;
+  border-width: medium;
+}
+button:hover{
+  color: rgb(214, 122, 127);
+  text-decoration-style: wavy;
+  font-style: oblique;
+  background-color: lightblue;
+  background-size: contain;
+}
+footer{
+  display: block;
+}

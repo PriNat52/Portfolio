@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <meta charset="utf-8">
+		<meta name="description" content="width=device-width,initial_scale=1.0">
+		<title>Hobbies</title>
+    <!--Require 1: Every page must be styled using same external style sheet-->
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="styleprint.css" media="print">
+	</head>
+	<body style="background-color: lightgray;">
+		<!--Requirement 3: HTML5 structural elements on every page.-->
+		<header id="profile"><br />
+			<h1 style="text-align:center; color:darkgreen;">Hobbies</h1>
+		</header>
+			<!--Requirement 7: Create a consistent menu/navigation bar that is used on
+			all pages and contain links to the other pages.-->
+		<nav id="menu">
+			||
+			<a href="../home">Home</a> ||
+      <a href="../bio">About Me</a> ||
+      <a href="../edu">Education</a> ||
+      <a href="..">Hobbies</a> ||
+			<a href="../gallery">Gallery</a> ||
+      <a href="../work">Software Engineer</a> ||
+      <a href="../teacher">Teacher</a> ||
+      <a href="../form">Feedback</a> ||
+		</nav>
+		<script>
+		window.onscroll = function() {myFunction()};
+
+		var navbar = document.getElementById("menu");
+		var sticky = navbar.offsetTop;
+
+		function myFunction() {
+  	if (window.pageYOffset >= sticky) {
+			document.getElementById("menu").style.backgroundColor="lightgray";
+    	navbar.classList.add("sticky")
+  	} else {
+			document.getElementById("menu").style.backgroundColor="transparent";
+    	navbar.classList.remove("sticky");
+  	}
+		}
+		</script>
+		<section >
+			<p class="a">
+				<h4 style="color:darkgreen;">Sensory Projects:</h4>
+				When I started working with kids I observed that the important physical sense most of the children enjoyed was sensory.
+				So I gradually started introducing such projects with the students in my class. The children not only enjoyed playing
+				with the finished product, but also enjoyed making them together with teachers/family and friends. By doing so, I saw
+				lots of milestone developments with the children.
+			</p><br />
+
+			<article class="man">
+				<figure>
+					<img class="a" src="sensory1.jpg" alt="Profile" width="300" height="300" />
+				</figure>
+      	<p class="b">
+					<h4 style="color:darkgreen;">Beach Day at Home!!</h4>
+					On very hot days, playing in water and sand is so much fun. This sand and water sensory was hit sensory project
+					at both home and school. Supplies needed for this project is large bin, play sand, large shells can also be painted
+					on if children are intrested, sea animal toys and water with blue food coloring.
+      	</p>
+			</article>
+		</section>
+		<footer style="color:white;">
+      &copy; funlearningforkids.com
+      <p id="note">printed from bio.html</p>
+    </footer>
+  </body>
+</html>

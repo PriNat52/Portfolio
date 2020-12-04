@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <meta charset="utf-8">
+		<meta name="description" content="width=device-width,initial_scale=1.0">
+		<title>Validation Form</title>
+		<!--Requirement 1: Style the page with CSS using an external style sheet.-->
+		<link rel="stylesheet" href="form.css">
+		<script src="form.js" charset="utf-8"></script>
+	</head>
+	<body>
+		<header>
+			<h1>Feedback</h1>
+		</header>
+		<nav id="menu">
+			||
+			<a href="../home">Home</a> ||
+      <a href="../bio">About Me</a> ||
+      <a href="../edu">Education</a> ||
+      <a href="../hobbies">Hobbies</a> ||
+			<a href="../gallery">Gallery</a> ||
+      <a href="../work">Software Engineer</a> ||
+      <a href="../teacher">Teacher</a> ||
+      <a href="..">Feedback</a> ||
+		</nav>
+		<script>
+		window.onscroll = function() {myFunction()};
+
+		var navbar = document.getElementById("menu");
+		var sticky = navbar.offsetTop;
+
+		function myFunction() {
+  	if (window.pageYOffset >= sticky) {
+			document.getElementById("menu").style.backgroundColor="lightgray";
+    	navbar.classList.add("sticky")
+  	} else {
+			document.getElementById("menu").style.backgroundColor="transparent";
+    	navbar.classList.remove("sticky");
+  	}
+		}
+		</script>
+		<!--Requirement 1: The form action-->
+		<form action = "" method="post" novalidate onsubmit="return Submit();">
+			<div id="firstNameError" class="firstErrorclass" style="background-color:red;" >
+				<span style="display:none">
+					Reminder: First Name should be more than (2) ALPHABETS.<br />
+				</span>
+			</div>
+			<div id="lastNameError" class="lastErrorclass" style="background-color:red;" >
+				<span style="display:none">
+					Reminder: Last Name should be more than (2) ALPHABETS.<br />
+				</span>
+			</div>
+			<div id="subjectNameError" class="subjectErrorclass" style="background-color:red;">
+				<span style="display:none">
+					Reminder: Please check facilators name.<br />
+				</span>
+			</div>
+			<div><br />
+				<!--Requirement 1: text input field with a name and id value-->
+				Enter Your First Name*:<br />
+				<input type="text" name="firstName" id="firstName" onmousemove="move(event)" size="35" maxlength="30" />
+			</div><br />
+			<div>
+				<!--Requirement 1: text input field with a name and id value-->
+				Enter Your Last Name*:<br />
+				<input type="text" name="lastName" id="lastName" onmousemove="move(event)" size="35" maxlength="30" />
+			</div>
+			<div>
+				<!--Requirement 1: text input field with a name and id value
+				Requirement 2: facilitator is a text input, not a select or any other type of input-->
+				<br />Subject:<br />
+				<input type="text" name="subject"  id="subject" onmousemove="move(event)" size="35" maxlength="30" />
+			</div>
+			<!--Requirement 1: a group of radio buttons with your choice of options-->
+			<p class="rest"> Please select your gender:<br />
+				<input type="radio" name="type" value="male" />
+				Male<br />
+				<input type="radio" name="type" value="female" />
+				Female
+				<br /><input type="radio" name="type" value="special" />
+				Not Intrested<br />
+			</p>
+			<!--Requirement 1: a group of check boxes with your choice of values-->
+			<p class="coffee">Enter your Message:<br />
+				<input type="text" name="message"  id="message" onmousemove="move(event)" size="35" maxlength="60" />
+			</p>
+			<button id="submit" formtarget="_top" autofocus> Send </button>
+				<br />
+			<label for="firstName">* - Required field</label>
+		</form>
+		<footer>
+			<br />
+			&copy; Aarn Giri
+		</footer>
+  </body>
+</html>

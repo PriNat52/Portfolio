@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>About Me</title>
+    <!--Require 1: Every page must be styled using same external style sheet-->
+    <link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="styleprint.css" media="print">
+  </head>
+  <body>
+    <!--Requirement 3: HTML5 structural elements on every page.-->
+    <header id="profile"><br />
+      <h1>About Me</h1>
+    </header>
+
+      <!--Requirement 7: Create a consistent menu/navigation bar that is used on
+			all pages and contain links to the other pages.-->
+    <nav id="menu">
+      ||
+      <a style="color:white;" href="../home">Home</a> ||
+      <a style="color:white;" href="..">About Me</a> ||
+      <a style="color:white;" href="../edu">Education</a> ||
+      <a style="color:white;" href="../hobbies">Hobbies</a> ||
+			<a style="color:white;" href="../gallery">Gallery</a> ||
+      <a style="color:white;" href="../work">Software Engineer</a> ||
+      <a style="color:white;" href="../teacher">Teacher</a> ||
+      <a style="color:white;" href="../form">Feedback</a> ||
+    </nav>
+    <script>
+		window.onscroll = function() {myFunction()};
+
+		var navbar = document.getElementById("menu");
+		var sticky = navbar.offsetTop;
+
+		function myFunction() {
+  	if (window.pageYOffset >= sticky) {
+			document.getElementById("menu").style.backgroundColor="gray";
+    	navbar.classList.add("sticky")
+  	} else {
+			document.getElementById("menu").style.backgroundColor="transparent";
+    	navbar.classList.remove("sticky");
+  	}
+		}
+		</script>
+    <section class="viewport">
+      <article id="context">
+        <!--Reqirement 4: Include atleast one image on every page -->
+        <figure>
+          <img style="float:left;margin-left: 0; border: 4px solid darkgreen;border-right: 4px solid chocolate;" src="profilepic.jpg" alt="Profile" width="300px" height="300px" />
+        </figure>
+        <!--Requirement 8: Include one video or audio element on atleast one page
+        that successfully plays in Firefox.-->
+        <video id="VideoBG" autoplay muted loop controls>
+            <source src="Theri.mp4" type="video/mp4">
+            <!--<source src="mob.webm" type="video/webm">-->
+        </video>
+        <!-- Requirement1: atleast two paragraphs of text based contents -->
+        <p class="a" id="alpha">
+          My friends and family call me Priya. I was born and brought up
+          in <em>Chennai,India.</em>My parents are Meenakshi Sundari and
+          Gnanasekaran. I am a Software Engineer,licensed Infants,Toddler,
+          Pre-School Teacher and a Proud Mom of two amazing boys.
+          I am bi-lingual, Tamil is my mother tongue.</p>
+
+        <p class="b" id="beta">
+          In 2010 I met my Husband Natarajan Alagappan, an Awesome Dancer and
+          Software Engineer. We had a traditional Indian marriage. After
+          marriage we moved to Boston,USA. Our journey together can be described
+           as <q>Work are in the process of becoming <b>Best Version</b> of
+          ourselves.</q> We have two sons Mahilan 7-years old and Ajayan 1-year
+          old.</p>
+
+        <p class="c" id="gama">
+          In my free time I like to read books, cook, travel, playing online
+          games with friends and creating art/sensory projects with my sons. My
+          favorite books are Twilight Saga, romance/fantasy books- manga, manhwa, comics.
+          My favorite sports is Softball.</p>
+      </article>
+    </section>
+    <footer style="color:white;">
+      &copy; Raj Dance Moves<br />
+      &copy; Krish Vel Murugan
+      <p id="note">printed from bio.html</p>
+    </footer>
+  </body>
+</html>

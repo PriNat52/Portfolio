@@ -1,0 +1,109 @@
+/*Requirement 1: Every page must be styled using same external style sheets */
+/*Requirement 2: Two(2) style sheets will be required */
+body {
+ margin:0;
+ padding:0;
+ color: black;
+ background: #FFFFFF;
+ font-size: 18px;
+ Font-family: fantasy , Times, serif;
+}
+/*Requirement 2c:atleast three(3) distinct differences between sheets*/
+#profile{
+  text-shadow: none;
+  padding-bottom: 10px;
+}
+/*Requirement 2c:atleast three(3) distinct differences between sheets*/
+#menu:hover{
+  color: black;
+  font-size: 18px;
+  font-style: oblique;
+  background-size: contain;
+  animation: none;
+}
+
+h1, h3{
+  background-image: none;
+  background-size: contain;
+  background-position: 480px;
+  background-repeat: no-repeat;
+  color: black;
+}
+
+video{
+  display: none;
+}
+
+.a{
+  white-space: normal;
+  font-style: normal;
+  color: black;
+  font-size: 16px;
+  text-align: justify;
+}
+.b{
+  white-space: normal;
+  font-style: normal;
+  color: black;
+  font-size: 16px;
+  text-align: justify;
+}
+p:hover{
+  border-left: double;
+  animation: none;
+}
+
+.c{
+  white-space: normal;
+  font-family: times;
+  font-style: normal;
+  color: black;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.t{
+  table-layout: fixed;
+  width: 480px;
+  border-collapse: collapse;
+  border: 2px solid black;
+}
+th,td {
+  border: 1px solid black;
+  text-align: center;
+  color: black;
+  font-size: 16px;
+}
+
+img.a{
+  width: 250px;
+  height: 250px;
+  float: none;
+  margin-left: 10px;
+  border: 2px solid black;
+}
+img.b{
+  width: 250px;
+  height: 250px;
+  float: left;
+  margin-right: 10px;
+  border: 2px solid black;
+}
+
+.list{
+  list-style: circle;
+  letter-spacing: normal;
+  color: black;
+}
+
+.viewport {
+  position: fixed;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+/*Requirement 2c:atleast three(3) distinct differences between sheets*/
+#note{
+  display: block;
+  text-align: center;
+}

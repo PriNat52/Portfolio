@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <meta charset="utf-8">
+		<meta name="description" content="width=device-width,initial_scale=1.0">
+		<title>Education</title>
+		<!--Require 1: Every page must be styled using same external style sheet-->
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="styleprint.css" media="print">
+	</head>
+	<body style="background-color: lightgray">
+    <!--Requirement 3: HTML5 structural elements on every page.-->
+		<header id="profile"><br />
+			<h1 style="text-align:center;color: darkgreen;">Education</h1>
+		</header>
+      <!--Requirement 7: Create a consistent menu/navigation bar that is used on
+			all pages and contain links to the other pages.-->
+		<nav id="menu">
+			||
+			<a href="../home">Home</a> ||
+      <a href="../bio">About Me</a> ||
+      <a href="..">Education</a> ||
+      <a href="../hobbies">Hobbies</a> ||
+			<a href="../gallery">Gallery</a> ||
+      <a href="../work">Software Engineer</a> ||
+      <a href="../teacher">Teacher</a> ||
+      <a href="../form">Feedback</a> ||
+		</nav>
+		<script>
+		window.onscroll = function() {myFunction()};
+
+		var navbar = document.getElementById("menu");
+		var sticky = navbar.offsetTop;
+
+		function myFunction() {
+  	if (window.pageYOffset >= sticky) {
+			document.getElementById("menu").style.backgroundColor="lightgray";
+    	navbar.classList.add("sticky")
+  	} else {
+			document.getElementById("menu").style.backgroundColor="transparent";
+    	navbar.classList.remove("sticky");
+  	}
+		}
+		</script>
+		<section class="main" >
+      <!--Requirement 5:Include one table containing tabular data on atleast
+      one page.-->
+      <table class="t" id="table">
+        <tr style="background-color: olive;">
+          <th>Institute Name</th>
+          <th>Course</th>
+        </tr>
+        <tr>
+          <!--Requirement 2: atleast one external hyper link to a publicly
+          hosted website(s)-->
+          <td><a href="https://www.stdominics.co.in" target="_blank" title="Click to view the webpage">
+						St.Dominics A.I.H.S.School
+          </a></td>
+          <td>High School</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.annauniv.edu" target="_blank" title="Click to view the webpage">
+						Anna University</a></td>
+          <td>B.E Computer Science</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.massbay.edu/" target="_blank" title="Click to view the webpage">
+						MassBay Community College
+          </a></td>
+          <td>Teacher Certification</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.bu.edu/met/" target="_blank" title="Click to view the webpage">
+						MET Boston University</a></td>
+          <td>M.Sc Software Development</td>
+        </tr>
+      </table>
+		</section>
+		<article style="display: inline-flex; float: left;" >
+			<!--Reqirement 4: Include atleast one image on every page-->
+      <figure>
+				<img class="a" src="photo-grad.jpg" width="600px" height="200px" />
+			</figure>
+			<p class="a" style="float:left;">
+				I completed my highschool at St.Domininc's AIHSS Chennai India. And completed my
+				Bachelor's in Compter Science and Engineering in Anna University Chennai India.
+				<br /><br />
+				After moving to United States, I completed few courses for the teacher certification in
+				MassBay Community college. In 2020, I've joined MET Boston University to do Master's in Software Development.
+			</p>
+		</article>
+		<footer>
+			&copy; unsplash.com
+			<p id="note">printed from edu.html</p>
+		</footer>
+	</body>
+</html>
