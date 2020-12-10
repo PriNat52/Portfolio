@@ -9,8 +9,9 @@
 		<script src="../form/form.js" charset="utf-8"></script>
 	</head>
 	<body>
-		<header>
-			<h1>Feedback</h1>
+		<header><br />
+			<h1 style="text-align: center; color:darkgreen;">Feedback</h1>
+
 		</header>
 		<nav id="menu">
 			||
@@ -56,42 +57,45 @@
 					Reminder: Please check facilators name.<br />
 				</span>
 			</div>
-			<div><br />
+			<div id="thanks" class="thanks" style="color:tan;">
+				<span style="display:none">
+					<h3>Thank you for visiting my webpage!!</h3>
+				</span>
+			</div>
+			<p>
 				<!--Requirement 1: text input field with a name and id value-->
 				Enter Your First Name*:<br />
-				<input type="text" name="firstName" id="firstName" onmousemove="move(event)" size="35" maxlength="30" />
-			</div><br />
-			<div>
+				<input type="text" name="firstName" id="firstName" onmousemove="move(event)" size="35" maxlength="30" /><br />
 				<!--Requirement 1: text input field with a name and id value-->
-				Enter Your Last Name*:<br />
-				<input type="text" name="lastName" id="lastName" onmousemove="move(event)" size="35" maxlength="30" />
-			</div>
-			<div>
+				<br />Enter Your Last Name*:<br />
+				<input type="text" name="lastName" id="lastName" onmousemove="move(event)" size="35" maxlength="30" /><br />
 				<!--Requirement 1: text input field with a name and id value
 				Requirement 2: facilitator is a text input, not a select or any other type of input-->
 				<br />Subject:<br />
 				<input type="text" name="subject"  id="subject" onmousemove="move(event)" size="35" maxlength="30" />
-			</div>
-			<!--Requirement 1: a group of radio buttons with your choice of options-->
-			<p class="rest"> Please select your gender:<br />
-				<input type="radio" name="type" value="male" />
-				Male<br />
-				<input type="radio" name="type" value="female" />
-				Female
-				<br /><input type="radio" name="type" value="special" />
-				Not Intrested<br />
 			</p>
+			<!--Requirement 1: a group of radio buttons with your choice of options-->
+
 			<!--Requirement 1: a group of check boxes with your choice of values-->
-			<p class="coffee">Enter your Message:<br />
-				<input type="text" name="message"  id="message" onmousemove="move(event)" size="35" maxlength="60" />
+			<p>Leave me a Message with your contact details:<br />
+				<textarea name="message"  id="message" onmousemove="move(event)" rows="5" cols="35">
+				</textarea>
+			</p>
+			<p class="rest">Did you like my webpage?<br />
+				<input type="radio" name="type" value="yes" />
+				Yes
+				<input type="radio" name="type" value="no" />
+				No
+				<input type="radio" name="type" value="hard" />
+				so-so
 			</p>
 			<button id="submit" formtarget="_top" autofocus> Send </button>
 				<br />
 			<label for="firstName">* - Required field</label>
 		</form>
-		<footer>
+		<footer style="color:darkgreen;">
 			<br />
-			&copy; Aarn Giri
+			&copy; Unsplash.com
 		</footer>
   </body>
 </html>
