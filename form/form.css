@@ -1,12 +1,39 @@
 body{
   margin-top: auto;
   align-items: center;
-  color: lightblue;
-  background-image: url(aarn-unsplash.jpg);
+  background-image: url(sincerely.jpg);
   background-size: cover;
-  font-family: serif;
-  font-size: 18px;
+  font-family: Arial;
+  font-size: 20px;
 }
+
+#menu{
+  text-decoration-color: olive;
+  text-align: center;
+  color: darkgreen;
+  font-size: 18px;
+  font-style: normal;
+  float: none;
+  margin: 2px;
+  overflow: hidden;
+  display: block;
+  padding: 8px;
+  background-color: transparent;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+}
+
+a{
+  color: olive;
+  text-decoration: none;
+}
+a:hover{
+  color: hsl(30, 100%, 50%);
+  text-decoration: underline;
+}
+
 h1{
   text-decoration: underline;
 }
@@ -21,7 +48,8 @@ form{
   color: tan;
   text-decoration-style: wavy;
   font-style: oblique;
-  background-color: transparent;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background*/
   background-size: auto;
   border-style: inset;
   text-align: left;
@@ -35,7 +63,7 @@ label{
 
 #submit{
   text-align: center;
-  border-width: thin;
+  border-width: medium;
   height: auto;
   width: 300px;
 }
