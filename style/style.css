@@ -76,13 +76,19 @@ a:hover{
 
 /*.active {
   background-color: hsl(30, 100%, 50%);
-   #dddddd
+   #dddddd 
+    hsl(30, 100%, 50%)
    text-align: left;
 
 }*/
 /* Requirement3: Use selectors to style all appropriate elements on all pages*/
-h1,h3{
-  color: hsl(30, 100%, 50%);
+h1{
+  color: darkgreen;
+  text-align: center;
+}
+
+h3{
+  color: darkgreen;
 }
 /*Requirement 4: Be creative*/
 video{
@@ -177,11 +183,16 @@ img.b{
 }
 .viewport {
   position: relative;
-  height: 90vh;
+  height: 100vh;
   text-align: center;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+}
+.cont{
+  position: relative;
+  display: inline-flex;
+  align-items: justify;
 }
 /*Requirement 4: Be creative
 #alpha:hover, #beta:hover, #gama:hover{
