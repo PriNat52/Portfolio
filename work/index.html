@@ -6,6 +6,8 @@
 		<title>Work</title>
 		<!--Require 1: Every page must be styled using same external style sheet-->
 		<link rel="stylesheet" href="../style/style.css">
+		<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
 	</head>
 	<body style="background-color:lightgray; ">
     <!--Requirement 3: HTML5 structural elements on every page.-->
@@ -25,6 +27,9 @@
       <a href="../teacher">Teacher</a> ||
       <a href="../form">Feedback</a> ||
 		</nav>
+		<script type="module" src="https://unpkg.com/img-comparison-slider@3/dist/component/component.esm.js"></script>
+		<script nomodule="" src="https://unpkg.com/img-comparison-slider@3/dist/component/component.js"></script>
+		<link rel="stylesheet" href="https://unpkg.com/img-comparison-slider@3/dist/collection/styles/initial.css" />
 		<script>
 		window.onscroll = function() {myFunction()};
 
@@ -41,15 +46,20 @@
   	}
 		}
 		</script>
-		<section class="margin">
+		<style type="text/css">
+  	img-comparison-slider {
+    	--divider-width: 2px;
+    	--divider-color: #c0c0c0;
+    	--handle-opacity: 0.3;
+  		}
+		</style>
+
+		<section class="margin" style="margin-left: 60px;">
       <!--Reqirement 4: Include atleast one image on every page -->
-      <figure>
-				<span title="C10014657 Excavator">
-        <img class="b"  src="C10014657excavator.jpg" alt="Site Work" width="400" height="300" />
-				</span><span title="Hosur Office">
-				<img class="a" src="CM201.jpg" alt="Site Work1" width="400" height="300" />
-				</span>
-      </figure>
+			<img-comparison-slider>
+				<img slot="before" src="C10014657excavator.jpg" width="50%">
+				<img slot="after" src="CM201.jpg" width="90%">
+			</img-comparison-slider>
 		</section>
 		<article id="context" style="position:static; float:left; margin: 0;">
 			<p class="c">
