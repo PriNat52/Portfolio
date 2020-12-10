@@ -1,4 +1,5 @@
 
+
 function Submit(){
   let firstName = document.getElementById("firstName").value;
   let firstNameError = document.getElementById("firstNameError");
@@ -6,6 +7,8 @@ function Submit(){
   let subjectNameError = document.getElementById("subjectrNameError");
   let lastName = document.getElementById("lastName").value;
   let subject = document.getElementById("subject").value;
+  let thanks = document.getElementById("thanks");
+
   let exp = /[A-Za-z ]{2,30}$/gi;
   //Requirement 2: Validate both firstName and lastName
   if (firstName.length < 2 | !firstName.match(exp)){
@@ -20,12 +23,15 @@ function Submit(){
     errorl();
     subjectNameError.innerHTML = subjectNameError.textContent;
     return false;
+  }
 }
 
 function move(e){
   document.getElementById("firstName").style.backgroundColor= "lightblue";
   document.getElementById("lastName").style.backgroundColor= "lightblue";
   document.getElementById("subject").style.backgroundColor= "lightblue";
+  document.getElementById("message").style.backgroundColor= "lightblue";
+  thanks.innerHTML = thanks.textContent;
 }
 
 function errorf(e){
