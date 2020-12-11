@@ -6,9 +6,9 @@ function Submit(){
   let lastNameError = document.getElementById("lastNameError");
   let subjectNameError = document.getElementById("subjectrNameError");
   let lastName = document.getElementById("lastName").value;
-  let subject = document.getElementById("subject").value;
+  let email = document.getElementById("subject").value;
   let thanks = document.getElementById("thanks");
-
+  const re = /\S+@\S+\.\S+/;
   let exp = /[A-Za-z ]{2,30}$/gi;
   //Requirement 2: Validate both firstName and lastName
   if (firstName.length < 2 | !firstName.match(exp)){
@@ -19,8 +19,8 @@ function Submit(){
     errorl();
     lastNameError.innerHTML = lastNameError.textContent;
     return false;
-  }else if(subject.length < 2 | !subject.match(exp)){
-    errorl();
+  }else if(!re.test(String(email).toLowerCase())){
+    error();
     subjectNameError.innerHTML = subjectNameError.textContent;
     return false;
   }
