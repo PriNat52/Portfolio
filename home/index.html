@@ -11,11 +11,12 @@
 		<!--Requirement 3: HTML5 structural elements on every page.-->
 		<header id="profile">
 			<h1 style="text-align:center;">Coffee with Priya!!</h1>
-		  <div id=”cse” style="align:right;" width=100%>Loading</div>
-			<script src=”http://www.google.com/jsapi” style="position:absolute; text-align:right;" type=”text/javascript”></script>
-			<script type=”text/javascript”>google.load(‘search’, ‘1’);
-          google.setOnLoadCallback(function(){var cse = new google.search.
-          CustomSearchControl();cse.draw(‘cse’);}, true);</script><br />
+		  <div id=”cse” width=100%>
+			<form method="GET" action="https://www.google.com/search">
+				<input type="text" name="q" placeholder="Google Search.." size="40%">
+				<input type="submit" value="search"></input>
+			</form>
+		</div><br />
 		</header>
 		<h3 style="text-decoration-style: wavy;"> Let's Exlore~</h3>
 		<nav id="box">
