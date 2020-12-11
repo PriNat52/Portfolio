@@ -41,7 +41,7 @@
 		}
 		</script>
 		<!--Requirement 1: The form action-->
-		<form action = "" method="post" novalidate onsubmit="return Submit();">
+		<form name="contact" method="post" novalidate onsubmit="return Submit();" netlify>
 			<div id="firstNameError" class="firstErrorclass" style="background-color:red;" >
 				<span style="display:none">
 					Reminder: First Name should be more than (2) ALPHABETS.<br />
@@ -92,6 +92,7 @@
 			<button id="submit" formtarget="_top" autofocus> Send </button>
 				<br />
 			<label for="firstName">* - Required field</label>
+			<input type="hidden" name="contact" value="contact">
 		</form>
 		<footer style="color:darkgreen;">
 			<br />
