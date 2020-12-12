@@ -1,0 +1,39 @@
+{
+  "my_studies":[
+    {
+      "edu":{
+        "link": "https://www.stdominics.co.in",
+        "Name":"St.Dominics A.I.H.S. Schoool",
+        "Course":"High School"
+      }
+    },
+    {
+       "edu":{
+        "link": "https://www.annauniv.edu",
+        "Name":"Anna University",
+        "Course":"B.E Computer Science"
+      }
+    },
+    {
+      "edu":{
+        "link": "https://www.massbay.edu/",
+        "Name":"MassBay Community College",
+        "Course":"Teacher Certification"
+      }
+    },
+    {
+      "edu":{
+        "link": "https://www.bu.edu/met/",
+        "Name":"MET Boston University",
+        "Course":"M.Sc Software Development"
+      }
+    }
+  ],
+  "header":[{
+    "educ":{
+        "name":"Institute Name",
+        "course":"Course"
+      }
+  }
+  ]
+}
