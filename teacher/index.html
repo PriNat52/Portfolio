@@ -3,7 +3,7 @@
 	<head>
     <meta charset="utf-8">
 		<meta name="description" content="width=device-width,initial_scale=1.0">
-		<title>Teacher</title>
+		<title>Discussions</title>
 		<!--Require 1: Every page must be styled using same external style sheet-->
 		<link rel="stylesheet" href="../style/style.css">
 	</head>
@@ -11,7 +11,7 @@
 		<!--Requirement 3: HTML5 structural elements on every page.-->
 		<header id="profile">
 			<br />
-			<h1 style="color:darkgreen; text-align: center;">Teacher</h1>
+			<h1 style="color:darkgreen; text-align: center;">CS601-Discussions</h1>
 		</header>
 
 			<!--Requirement 7: Create a consistent menu/navigation bar that is used on
@@ -43,32 +43,179 @@
   	}
 		}
 		</script>
-		<section class="main" style="display: inline-flex; float: left;">
+		<style>
+			.main{
+				margin-left: 200px;
+				margin-right: 200px;
+			  position: relative;
+				display: flex;
+				flex-direction: row;
+	 			justify-content: space-evenly;
+				box-sizing: border-box;
+				border-bottom: 2px solid darkgreen;
+			}
+			button{
+				height: 50px;
+			}
+			button:hover{
+			  color: rgb(214, 122, 127);
+			  font-style: oblique;
+			  background-color: lightblue;
+			}
+		</style>
+		<section class="main">
 			<!--Reqirement 4: Include atleast one image on every page -->
 			<figure>
-				<span title="Award 2020">
-        	<img style="box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5); border: 4px solid darkgreen; border-right: 4px solid chocolate;" src="cskc.jpg" alt="Site Work" width="300px" height="350px" />
+				<span title="Discussion">
+		       	<img src="D1.jpg" alt="Site Work" width="220px" height="220px" />
 				</span>
-      </figure>
+		  </figure>
 			<article id="context">
-				<p class="c"><h4 style="color:darkgreen;">Work History:</h4>
-					<i>Infant/Toddler/Pre-School Teacher</i><br />
-					<a href="http://www.cedarstreetkidsclub.com/" target="_blank" title="Click to view the webpage">
-						Cedar Street Kids Club</a>
-						<br />Ashland,MA 01721.
-					</p>
-					<p class="a">The Curlett's started Cedar Street Kids' Club to make a positive impact
-				 	on the community. With an inspirational curriculum and innovative parent
-				 	communication, Cedar Street Kids' Club is working hard to achieve this
-				 	mission.</p>
-					<p class="b">I'm proud to say I was a part of CSKC team. My three years with CSKC
-						was amazing, I was able to meet excellent directors and co-workers that
-						helped in every obstacle I faced down the road.</p>
-				</article>
-			</section>
+
+						<h4 style="color:darkgreen;">Discussion 1:</h4>
+						<h5 style="color:darkgreen;">Question:</h5>
+						<p class="a">Research an advanced text editor or integrated development environment (IDE) that is commonly used for web development.
+							Describe its core features, it’s pros/cons, unique qualities and/or features, price, software license type, platforms, etc.
+							Would you use this tool? Why or why not?Be sure to cite your sources.</p>
+							<p id="d1"></p>
+							<button id="load1" formtarget="_blank">Read me</button>
+							<script>
+							document.getElementById("load1").addEventListener("click",function(){
+								var xmlhttp = new XMLHttpRequest();
+								xmlhttp.open("GET", "d1.odt");
+								xmlhttp.onreadystatechange = function() {
+									document.getElementById("d1").innerHTML = this.responseText;
+								};
+								xmlhttp.send();
+							});
+							</script>
+					</article>
+				</section>
+
+				<section class="main">
+						<!--Reqirement 4: Include atleast one image on every page -->
+						<figure>
+							<span title="Award 2020">
+			        	<img src="D2.jpg" alt="Site Work" width="220px" height="220px" />
+							</span>
+			      </figure>
+						<article id="context">
+
+							<h4 style="color:darkgreen;">Discussion 2:</h4>
+							<h5 style="color:darkgreen;">Question:</h5>
+							<p class="a">Select and read a recent (within 2-3 years) online article about CSS. A good article will focus on concepts not introduced in this week’s reading materials or significantly expand upon them.
+								Select two to three of the author’s main concepts and summarize them. The goal is for you to learn more about CSS and share this new knowledge with your classmates.
+								Be sure to cite your sources.</p>
+								<p id="d2"></p>
+								<button id="load2" formtarget="_blank">Read me</button>
+								<script>
+								document.getElementById("load2").addEventListener("click",function(){
+									var xmlhttp = new XMLHttpRequest();
+									xmlhttp.open("GET", "d2.odt");
+									xmlhttp.onreadystatechange = function() {
+										document.getElementById("d2").innerHTML = this.responseText;
+									};
+									xmlhttp.send();
+								});
+								</script>
+						</article>
+					</section>
+					<section class="main">
+							<!--Reqirement 4: Include atleast one image on every page -->
+							<figure>
+								<span title="Award 2020">
+									<img src="D3.jpg" alt="Site Work" width="220px" height="220px" />
+								</span>
+							</figure>
+							<article id="context">
+
+								<h4 style="color:darkgreen;">Discussion 3:</h4>
+								<h5 style="color:darkgreen;">Question:</h5>
+								<p class="a">Research and find two or more websites that use
+									JavaScript in fun and exciting ways. Share a description of how the JavaScript
+									 is used to enhance the page and visitor experience and share a link to the page.</p>
+									 <p id="d3"></p>
+									 <button id="load3" formtarget="_blank">Read me</button>
+			 						<script>
+			 						document.getElementById("load").addEventListener("click",function(){
+			 							var xmlhttp = new XMLHttpRequest();
+			 							xmlhttp.open("GET", "d3.odt");
+			 							xmlhttp.onreadystatechange = function() {
+			 								document.getElementById("d3").innerHTML = this.responseText;
+			 							};
+			 							xmlhttp.send();
+			 						});
+			 						</script>
+							</article>
+						</section>
+						<section class="main">
+								<!--Reqirement 4: Include atleast one image on every page -->
+								<figure>
+									<span title="Award 2020">
+										<img src="D4.jpg" alt="Site Work" width="220px" height="220px" />
+									</span>
+								</figure>
+								<article id="context">
+
+									<h4 style="color:darkgreen;">Discussion 4:</h4>
+									<h5 style="color:darkgreen;">Question:</h5>
+									<p class="a">As you start to build more complex web applications,
+										you will likely come to find that you need to implement some type of software
+										 architecture pattern. One common example is when implementing user interfaces
+										  in our web apps, the Model View Controller (MVC) is commonly used.Perform some research about MVC and concisely explain how it is used.
+ 										Here are some questions to consider addressing in your response:
+								    What are the benefits of using MVC?
+								    Are there any draw backs to using MVC?
+								    What are some of the popular web frameworks that implement a MVC approach?
+								    If you have formed one, what is your opinion about MVC?
+								Be sure to cite your sources.</p>
+								<p id="d4"></p>
+								<button id="load4" formtarget="_blank">Read me</button>
+								<script>
+								document.getElementById("load4").addEventListener("click",function(){
+									var xmlhttp = new XMLHttpRequest();
+									xmlhttp.open("GET", "d4.odt");
+									xmlhttp.onreadystatechange = function() {
+										document.getElementById("d4").innerHTML = this.responseText;
+									};
+									xmlhttp.send();
+								});
+								</script>
+								</article>
+							</section>
+							<section class="main">
+									<!--Reqirement 4: Include atleast one image on every page -->
+									<figure>
+										<span title="Award 2020">
+											<img src="D5.jpg" alt="Site Work" width="220px" height="220px" />
+										</span>
+									</figure>
+									<article id="context">
+
+										<h4 style="color:darkgreen;">Discussion 5:</h4>
+										<h5 style="color:darkgreen;">Question:</h5>
+										<p class="a">We presented a few of the new features incorporated into ECMAScript 6, but certainly not all of them. Perform some research on an ES6 feature that was not discussed in depth in the lecture notes. You can see a list of other ES6 features in the lecture notes under the title of "Introduction to ES6 Feature".
+											Here are some questions to consider addressing in your response:
+									    What feature did you research?
+									    What functionality does it provide?
+									    How is it used?
+									    Do you have a simple example?</p>
+											<p id="d5"></p>
+											<button id="load5" formtarget="_blank">Read me</button>
+											<script>
+											document.getElementById("load5").addEventListener("click",function(){
+												var xmlhttp = new XMLHttpRequest();
+												xmlhttp.open("GET", "d5.odt");
+												xmlhttp.onreadystatechange = function() {
+													document.getElementById("d5").innerHTML = this.responseText;
+												};
+												xmlhttp.send();
+											});
+											</script>
+									</article>
+								</section>
     <footer>
-			&copy; Cedar Street Kids Club
-			<p id="note">printed from teacher.html</p>
+			<p id="note">printed from discussions.html</p>
     </footer>
   </body>
 </html>
