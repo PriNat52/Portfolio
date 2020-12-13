@@ -1,0 +1,32 @@
+
+
+Komodo IDE and Komodo Edit. 
+
+Komodo IDE is an integrated development environment (IDE) for dynamic programming languages. It is a cross-platform IDE for all major languages including Python, PHP, Ruby, Perl, Node.js, HTML, CSS and Javascript. Komodo IDE has an open source counterpart called Komodo Edit.
+
+Komodo Edit is a text editor, that contains something powerful yet simple for beginners to work with. Most of the code base are shared between Komodo Edit and IDE, although more advanced features are reserved for Komodo IDE.
+
+Unique qualities are it offers two versions, one is for light users can get small projects done and another is for the advanced level user. Both versions Komodo Edit and Komodo IDE can be downloaded for free and multi language editors.
+
+Features:
+Komodo IDE version has real-time code collaboration tools for connecting with other developers in the team, sharing, editing files together. It also has interactive shells,plent of integrations such as Gulp, Grunt and live previewing.
+Komodo Edit version has a feature to track changes and make multiple selections.
+
+Pros: for Komodo IDE are collaboration tools that connects developers in the team, clear user interface and built-in version control. For Komoda Edit are free open source and built in FTP client thta allows developers to access remotely.
+
+Cons: for KomodoIDE are its expensive, even though the free version is available it seems to lack functionality. For Komodo Edit it has slow startup issues.
+
+Platforms: Komodo IDE: cross-platform; Komodo Edit: Windows, MacOS, Linux;
+Type: Komodo IDE : Source code editor, IDE; Komodo Edit: Text Editor, IDE
+License: Komodo IDE: Proprietary ; Komodo Edit: MPL; GPL; LGPL
+Price: Komodo IDE: $79.9/yr ; Komodo Edit: free
+
+I would like to use real-time collaboration tools feature in komodo IDE version but the licensed version seems expensive. I'm excited to try my hands at Komodo Edit version which is simple to use for small projects.
+
+Resources:
+
+    • https://en.wikipedia.org/wiki/Komodo_IDE 
+    • https://www.activestate.com/products/komodo-edit/ 
+    • https://sourceforge.net/software/product/Komodo-IDE/ 
+    • https://kinsta.com/blog/best-text-editors/#komodo-edit 
+

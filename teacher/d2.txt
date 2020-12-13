@@ -1,0 +1,41 @@
+
+
+Two-value Syntax of Display Property 
+
+The Two-value syntax of the CSS display property
+This article was written by Rachel Andrew https://hacks.mozilla.org/2019/10/the-two-value-syntax-of-the-css-display-property/ posted on 2019. 
+
+The display Property used for formatting context of an element and its children. In CSS some elements are block by default, and others are inline. It enables switching between these states. For example, this means that an h1, usually a block element, can be displayed inline. Or a span, initially an inline element, can be displayed as a block. 
+
+Refactoring Display: The CSS display specification has been refactored to allow, display to accept two values. The first describes whether the outer display type is block or inline, and the second value describes the formatting of the children.
+Single value
+New value
+block
+block flow
+flow-root
+block flow-root
+inline
+inline flow
+inline-block
+inline flow-root
+flex
+block flex
+inline-flex
+inline flex
+grid
+block grid
+inline-grid
+inline grid
+
+Here is an example for Flexbox. To have a block-level element with flex children we use display: block flex and if we want an inline-level element with flex children we use display: inline flex
+The below example will work in Firefox 70.
+
+In the output, display: block becomes display: block flow that is a block element with children participating in normal flow. A display: inline element becomes display: inline flow. 
+Here is another example shows both block flow-root and inline flow-root. Using flow-root gives the creation of a block formatting context (the region in which the layout of block boxes occurs) and we can see the box with the grey background contains the float, leaving a gap underneath the text. 
+
+Can we use the two-value property?
+With support currently available only in Firefox 70. Currently, other browsers will not support them. Its always very interesting to learn about new features and implementing them. I’m looking forward for all the browsers to implement the two-value version, so we can use them in production.
+Sources:
+The two-value syntax of the CSS Display property – Mozilla Hacks - the Web developer blog The display CSS property is how we change the formatting context of an element and its children. One of the first things you will learn about CSS is that some ... Mozilla Hacks – the Web developer blog 
+CSS display property Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML. 
+

@@ -1,0 +1,42 @@
+
+
+Spread and Rest 
+
+1.Spread Syntax (...)
+      
+        Spread syntax (...) allows an iterable such as an array expression or string to be expanded in places
+
+where zero or more arguments (for function calls) the syntax for Function call: myFunction(...iterableObj);
+
+zero or more elements (for array literals) the syntax for array literals or strings: [...iterableObj, '4', 'five', 6];
+
+or an object expression to be expanded in places where zero or more key-value pairs (for object literals) are expected. The syntax for object literals (new in ECMAScript 2018): let objClone = { ...obj };
+
+Simple Example:
+
+
+
+
+2. Rest Parameters:
+
+       The rest parameter syntax allows us to represent an indefinite number of arguments as an array. A function's last parameter can be prefixed with ... which will cause all remaining (user supplied) arguments to be placed within a "standard" JavaScript array.
+
+The syntax for rest param is: Only the last parameter can be a "rest parameter". 
+
+function f(a, b, ...theArgs) {
+  // ...
+}
+Simple Example:
+
+
+Difference between Rest and Spread syntax:
+       Rest syntax looks exactly like spread syntax. In a way, rest syntax is the opposite of spread syntax. Spread syntax "expands" an array into its elements, while rest syntax collects multiple elements and "condenses" them into a single element.
+
+References:
+
+Rest parameters The rest parameter syntax allows us to represent an indefinite number of arguments as an array. MDN Web Docs 
+
+Spread syntax (...) Spread syntax (...) allows an iterable such as an array expression or string to be expanded in places where zero or more arguments (for function calls) or elements (for array literals) are expected, or an object expression to be expanded in places where zero or more key-value pairs (for object literals) are expected. MDN Web Docs 
+
+https://www.w3schools.com/js/js_es6.asp#mark_rest
+

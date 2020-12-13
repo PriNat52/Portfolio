@@ -1,0 +1,28 @@
+
+
+MVC design pattern 
+
+Model View Controller (MVC) was originally applied in a desktop application environment where the application resides on the computer with which the user is interacting. It is a simple architecture where all the components are seperated in three classes:
+Model - Model represent the shape of the data. Classes that contains data that will be shown to the user.
+View - View in MVC is an user interface. Components that will display the model to the user.
+Controller - Controller handles the user requests. Components that will handle any interaction with the user.
+By interacting with a web application, the user sends request to the server (client side). The server responds with the resources to the user's request (server side). The user receives the server's response on the browser window. Thus when developers want to apply the MVC pattern tot he web application, they have to consider the client/server environment in which the application works.
+
+Benefits of using MVC pattern:
+    • With MVC, it can be easier to test the core of the application, as encapsulated by the model. 
+    • Multiple simultaneous views of the same model. 
+    • The change propagation mechanism insures that all views simultaneously reflect the current state od the model. 
+    • changes that affects just the user intervace of the application can be made easier. 
+    • Different views and controllers can be substituted to provide alternate user interfaces for the same model. 
+Drawbacks of using MVC pattern:
+    • Changes to the model interface will necessitate changes to the controller and the view. 
+    • When the model is active frequent changes to model can result in excessive updates of the corresponding views. 
+Popular web frameworks that implements MVC approach:
+    • Angular JS 
+    • jQuery Mobile 
+    • ASP.Net 
+My opinion while using MVC as a part of the team was it reduced the complexity of completing the project on time.By dividing the end project into different layers as model, view and controller, made it easier to eliminate errors as it occured and rebuilding the webpage.
+References:
+https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller
+The Benefits and Drawbacks of using The MVC Pattern
+

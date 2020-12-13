@@ -1,0 +1,25 @@
+
+
+
+Exciting Websites That Uses Javascript
+1. HighRise - Highrise
+
+        This website is owned by National Film Board of Canada. HighRise explores vertical living in the global suburbs. As we scroll down the webpage, we could see their multiple projects that they are commited to. One of them is One Millionth Tower it truly gives us an epic experience of vertical living. While I explored this page, it had a short interactive documentry about their history of bringing residents, architects, animators and web developers. When viewed the source code CSS, Javascript and jQuery were used for navigation bar, images and window settings in a horizontal,vertical order.
+
+2. Carbon Studio
+
+       To simply put, this webpage was vibrant, colorful and engaging site. Each panel in this webpage is linked to another webpage, where the contents are illlustrated, animated and are interactive. One of the panels has BBC|Doctore who Dalek Hack has an interactive game targeted for young teens, where the students are challenged to solve a disaster scenario. When I viewed the code, Javascript was used for enhancing menu/navigation bars, functions for visibility.
+
+3. HexGL
+
+      While I was exploring for open sourse HTML5 and Javascript games, I came across HexGL. HexGL stand out from the rest because of its amazing graphics for the game design. This game has an excellent user interface that gives the user plaing an offline video games on a desktop. One of the best part of the open source games are we can download its source, make changes as we need and run it on our web browser. Source code for HexGL - https://github.com/BKcore/HexGL . This project is maintained by Thibaut Despoulain.
+
+
+
+Reference:
+
+Top 10 Cool Sites That Use JavaScript - Learnit Anytime Should you use JavaScript? JavaScript has come a long way since its 1995 Netscape introduction. And believe it or not, a lot of developers today are using Learnit Anytime 
+
+Create the Snake Game Using JavaScript We will create the Snake game using JavaScript only, means no framework is been used during the tutorial, the tutorial has two parts: 1st part : we understand everything about the game, we discuss things before we code. 2nd part : Type in the Code. 
+51 Best Open Source HTML5 and JavaScript Games 2020 - Edopedia In this article I have carefully organized a list of best open source HTML5 and JavaScript games. As the source code of these games is publicly available so it allows you to get an understanding about the actual procedure behind creating such games. Edopedia 
+
