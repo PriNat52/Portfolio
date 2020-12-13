@@ -24,7 +24,7 @@
       <a href="../hobbies">Hobbies</a> ||
 			<a href="../gallery">Gallery</a> ||
       <a href="../work">Software Engineer</a> ||
-      <a href="..">Teacher</a> ||
+      <a href="..">Discussions</a> ||
       <a href="../form">Feedback</a> ||
 		</nav>
 		<script>
@@ -81,13 +81,17 @@
 							<button id="load1" formtarget="_blank">Read me</button>
 							<script>
 							document.getElementById("load1").addEventListener("click",function(){
-								var xmlhttp = new XMLHttpRequest();
-								xmlhttp.open("GET", "d1.odt");
-								xmlhttp.onreadystatechange = function() {
-									document.getElementById("d1").innerHTML = this.responseText;
-								};
-								xmlhttp.send();
-							});
+								let xmlhttp = new XMLHttpRequest();
+								xhttp.onreadystatechange = function () {
+								    if (this.readyState == 4 && this.status == 200) {
+								      let Text = this.responseText;
+								      document.getElementById("d1").innerHTML = Text;
+								      window.open(Text,'_blank');
+								    }
+								  };
+								  xhttp.open("GET", "d1.txt", true);
+								  xhttp.send();
+								});
 							</script>
 					</article>
 				</section>
@@ -110,12 +114,16 @@
 								<button id="load2" formtarget="_blank">Read me</button>
 								<script>
 								document.getElementById("load2").addEventListener("click",function(){
-									var xmlhttp = new XMLHttpRequest();
-									xmlhttp.open("GET", "d2.odt");
-									xmlhttp.onreadystatechange = function() {
-										document.getElementById("d2").innerHTML = this.responseText;
-									};
-									xmlhttp.send();
+									let xmlhttp = new XMLHttpRequest();
+									xhttp.onreadystatechange = function () {
+								    if (this.readyState == 4 && this.status == 200) {
+								      let Text = this.responseText;
+								      document.getElementById("d2").innerHTML = Text;
+								      window.open(Text,'_blank');
+								    }
+								  };
+								  xhttp.open("GET", "d2.txt", true);
+								  xhttp.send();
 								});
 								</script>
 						</article>
@@ -138,13 +146,17 @@
 									 <button id="load3" formtarget="_blank">Read me</button>
 			 						<script>
 			 						document.getElementById("load").addEventListener("click",function(){
-			 							var xmlhttp = new XMLHttpRequest();
-			 							xmlhttp.open("GET", "d3.odt");
-			 							xmlhttp.onreadystatechange = function() {
-			 								document.getElementById("d3").innerHTML = this.responseText;
-			 							};
-			 							xmlhttp.send();
-			 						});
+			 							let xmlhttp = new XMLHttpRequest();
+			 							xhttp.onreadystatechange = function () {
+										    if (this.readyState == 4 && this.status == 200) {
+										      let Text = this.responseText;
+										      document.getElementById("d3").innerHTML = Text;
+										      window.open(Text,'_blank');
+										    }
+										  };
+										  xhttp.open("GET", "d3.txt", true);
+										  xhttp.send();
+										});
 			 						</script>
 							</article>
 						</section>
@@ -173,11 +185,17 @@
 								<button id="load4" formtarget="_blank">Read me</button>
 								<script>
 								document.getElementById("load4").addEventListener("click",function(){
-									var xmlhttp = new XMLHttpRequest();
-									xmlhttp.open("GET", "d4.odt");
-									xmlhttp.onreadystatechange = function() {
-										document.getElementById("d4").innerHTML = this.responseText;
-									};
+									let xmlhttp = new XMLHttpRequest();
+									xhttp.onreadystatechange = function () {
+								    if (this.readyState == 4 && this.status == 200) {
+								      let Text = this.responseText;
+								      document.getElementById("d4").innerHTML = Text;
+								      window.open(Text,'_blank');
+								    }
+								  };
+								  xhttp.open("GET", "d4.txt", true);
+								  xhttp.send();
+								});
 									xmlhttp.send();
 								});
 								</script>
@@ -204,13 +222,17 @@
 											<button id="load5" formtarget="_blank">Read me</button>
 											<script>
 											document.getElementById("load5").addEventListener("click",function(){
-												var xmlhttp = new XMLHttpRequest();
-												xmlhttp.open("GET", "d5.odt");
-												xmlhttp.onreadystatechange = function() {
-													document.getElementById("d5").innerHTML = this.responseText;
-												};
-												xmlhttp.send();
-											});
+												let xmlhttp = new XMLHttpRequest();
+												xhttp.onreadystatechange = function () {
+													    if (this.readyState == 4 && this.status == 200) {
+													      let Text = this.responseText;
+													      document.getElementById("d5").innerHTML = Text;
+													      window.open(Text,'_blank');
+													    }
+													  };
+													  xhttp.open("GET", "d5.txt", true);
+													  xhttp.send();
+													});
 											</script>
 									</article>
 								</section>
