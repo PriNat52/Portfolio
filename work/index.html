@@ -134,24 +134,6 @@
 						helped in every obstacle I faced down the road.</p>
 				</article>
 		</section>
-
-	<aside style="text-align:center;">
-		<p>Click on the button below to view my Resume </p>
-		<button id="load" formtarget="_blank">Resume</button>
-		<script>
-			document.getElementById("load").addEventListener("click",function(){
-			let xhttp = new XMLHttpRequest();
-			xhttp.onreadystatechange = function () {
-				if (this.readyState == 4 && this.status == 200) {
-				     let Text = this.responseText;
-				    window.open("resume.txt","_blank");
-				  }
-				 };
-				 xhttp.open("GET", "resume.txt", true);
-				 xhttp.send();
-				});
-		</script>
-	</aside>
     <footer>
       &copy; Gmmco Limited and Cedar Street Kids Club
 			<p id="note">printed from work.html</p>
