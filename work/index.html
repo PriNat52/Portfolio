@@ -136,10 +136,10 @@
 			xhttp.onreadystatechange = function () {
 				if (this.readyState == 4 && this.status == 200) {
 				     let Text = this.responseText;
-				    window.open("resume.pdf","_blank");
+				    window.open("resume.txt","_blank");
 				  }
 				 };
-				 xhttp.open("GET", "resume.pdf", true);
+				 xhttp.open("GET", "resume.txt", true);
 				 xhttp.send();
 				});
 		</script>
