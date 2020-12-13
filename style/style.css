@@ -1,8 +1,6 @@
 /*Requirement 1: Every page must be styled using same external style sheets */
 /*Requirement 2: Two(2) style sheets will be required */
 body{
-  margin-left: 200px;
-	margin-right: 200px;
   padding: 0;
   color: rebeccapurple;
   font-size: 20px;
@@ -38,7 +36,6 @@ button:hover{
   position: relative;
 }
 #menu{
-	margin: 0;
   text-decoration-color: olive;
   text-align: center;
   color: darkgreen;
