@@ -1,0 +1,65 @@
+PRIYANKA GNANASEKARAN
+Mobile: 978-549-5705 E-mail: priya.nat52@gmail.com
+
+Career Objective:
+An entry-level software development position that utilizes my technical skills, education,
+experience and passion for solving interesting problems and transforming complication
+into simplicity
+
+Education:
+Bachelor of Engineering - Computer Science
+T.J Institute of Technology (affiliated to Anna University)
+TamilNadu-India
+
+Technical Skills: 
+Programming Languages: C, C++, C#, Visual Basic
+Web Application Tools: Javascript, HTML
+Database: SQL Server 2005
+Frameworks: ASP .Net framework
+Development Tools: Microsoft .Net 3.0, Textpad, HTML editor
+Operating Systems:Windows, MS - DOS
+MS Tools: Office, Excel, Powerpoint
+
+Work History:
+Assistant Programmer/Developer
+GMMCO (CATERPILLAR) LIMITED – Tamilnadu, India
+Feb 2010 to July 2010
+
+Project Title: Machine Tracker
+Machine Tracker is a web enabled application developed to keep track of mining
+machines available at CAT customer sites all over India. This project is used by the
+service department and it also helps them to check time duration of delivery. Developed
+using C# and asp.net with SQL database.
+
+Role/Responsibility:
+Involved in requirement gathering and was responsible for the Analysis, Design and 
+Development of the System
+Developed Interactive GUI screens
+Involved in Use case Reviews, Design Reviews and Code Reviews.
+
+End-to-End development
+Testing
+Live support of the production application. Analyzed and resolved the Production
+Incidents.
+
+Project Title: Daily Job Log.
+Record daily activities of service technicians on an hourly basis. This application is used
+by service department to keep track of technicians job log on a daily basis and helps
+finance department with their monthly billing purposes. This project was developed as a
+web based application using asp.net and c#.net as front-end and SQL as back-end.
+
+Role/Responsibility:
+Involved in requirement gathering and was responsible for the Analysis, Design and Development.
+Developed Interactive GUI screens
+Involved in Use case Reviews, Design Reviews and Code Reviews.
+
+End-to-End development
+Testing
+
+Internship:
+SANDS PVT LTD
+Tamilnadu, India
+Project Title: Casualty Messenger.
+Casualty Messenger prime purpose is to save precious human life. It uses sensors
+to detect the location of accidents and transmit this information to the nearest hospital
+/ ambulance service. Developed using c#.net, asp.net, html and SQL.
