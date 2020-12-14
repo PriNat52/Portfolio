@@ -4,8 +4,9 @@
     <meta charset="utf-8">
 		<meta name="description" content="width=device-width,initial_scale=1.0">
 		<title>Hobbies</title>
-    <!--Require 1: Every page must be styled using same external style sheet-->
+   		 <!--Require 1: Every page must be styled using same external style sheet-->
 		<link rel="stylesheet" href="../style/style.css">
+		<script src="https://unpkg.com/vue"></script>
 	</head>
 	<body style="background-color: lightgray;">
 		<!--Requirement 3: HTML5 structural elements on every page.-->
@@ -17,30 +18,15 @@
 		<nav id="menu">
 			||
 			<a href="../home">Home</a> ||
-      <a href="../bio">About Me</a> ||
-      <a href="../edu">Education</a> ||
-      <a href="..">Hobbies</a> ||
+		       <a href="../bio">About Me</a> ||
+		       <a href="../edu">Education</a> ||
+		       <a href="..">Hobbies</a> ||
 			<a href="../gallery">Gallery</a> ||
-      <a href="../work">Work</a> ||
-      <a href="../teacher">Discussions</a> ||
-      <a href="../form">Feedback</a> ||
+		      <a href="../work">Work</a> ||
+		      <a href="../teacher">Discussions</a> ||
+		      <a href="../form">Feedback</a> ||
 		</nav>
-		<script>
-		window.onscroll = function() {myFunction()};
-
-		var navbar = document.getElementById("menu");
-		var sticky = navbar.offsetTop;
-
-		function myFunction() {
-  	if (window.pageYOffset >= sticky) {
-			document.getElementById("menu").style.backgroundColor="lightgray";
-    	navbar.classList.add("sticky")
-  	} else {
-			document.getElementById("menu").style.backgroundColor="transparent";
-    	navbar.classList.remove("sticky");
-  	}
-		}
-		</script>
+		
 		<section style="margin-left: 200px; margin-right: 200px;">
 		<h4 style="color:darkgreen;">Sensory Projects:</h4>
 		<p>
@@ -51,17 +37,49 @@
 		</p>
 		</section>
 		<section class="cont" style="margin-left: 200px; margin-right: 200px;">
-			<figure>
-				<img class="a" src="sensory1.jpg" alt="Profile" width="300" height="300" />
-				<figcaption style="color:darkgreen;">Beach Day at Home!!</figcaption>
-			</figure>
+			<div id="app">
+				<figure>
+					<img v-bind:src='pic1' v-on:mousemove="update1" v-on:mouseleave="extract1"></img>
+					<figcaption style="color:darkgreen;">Beach Day at Home!!</figcaption>
+				</figure>
+			</div>
 			<p>
 				<br />
 					In Summer, playing in water and sand is so much fun. This sand and water sensory was hit sensory project
 					at both home and school. Supplies needed for this project is large bin, play sand, large shells can also be painted
 					on if children are intrested, sea animal toys and water with blue food coloring.
-      </p>
+    		  </p>
 		</section>
+		<script>
+		window.onscroll = function() {myFunction()};
+
+		var navbar = document.getElementById("menu");
+		var sticky = navbar.offsetTop;
+
+		function myFunction() {
+			if (window.pageYOffset >= sticky) {
+				document.getElementById("menu").style.backgroundColor="lightgray";
+			navbar.classList.add("sticky")
+			} else {
+				document.getElementById("menu").style.backgroundColor="transparent";
+			navbar.classList.remove("sticky");
+			}
+			}
+			var app = new Vue({
+			  el:'#app',
+			  data:{
+			    pic1: "sensory1.jpg"
+			    },
+			    methods:{
+			      update1: function(){
+			        this.pic1="Sensory12.jpg";
+			      },
+			      extract1: function(){
+			        this.pic1 = "sensory1.jpg";
+			      }
+					}
+				});
+		</script>
 		<footer style="margin-left: 200px; margin-right: 200px;">
       &copy; funlearningforkids.com
       <p id="note">printed from bio.html</p>
