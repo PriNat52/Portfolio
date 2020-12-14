@@ -79,7 +79,8 @@
 			var app = new Vue({
 			  el:'#app',
 			  data:{
-			    pic1: "sensory1.jpg"
+			    pic1: "sensory1.jpg",
+					pic2: "Rainbow1.jpg"
 			    },
 			    methods:{
 			      update1: function(){
@@ -87,13 +88,19 @@
 			      },
 			      extract1: function(){
 			        this.pic1 = "sensory1.jpg";
+			      },
+						update1: function(){
+			        this.pic2="Rainbow12.jpg";
+			      },
+			      extract1: function(){
+			        this.pic2 = "Rainbow1.jpg";
 			      }
 					}
 				});
 		</script>
 		<footer style="margin-left: 200px; margin-right: 200px;">
-      &copy; funlearningforkids.com
-      <p id="note">printed from bio.html</p>
-    </footer>
+		      &copy; funlearningforkids.com
+		      <p id="note">printed from bio.html</p>
+		 </footer>
   </body>
 </html>
