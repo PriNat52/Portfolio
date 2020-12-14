@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-    <meta charset="utf-8">
+   		 <meta charset="utf-8">
 		<meta name="description" content="width=device-width,initial_scale=1.0">
 		<title>Hobbies</title>
    		 <!--Require 1: Every page must be styled using same external style sheet-->
 		<link rel="stylesheet" href="../style/style.css">
 		<script src="https://unpkg.com/vue"></script>
 	</head>
-	<body style="background-color: lightgray;">
-		<!--Requirement 3: HTML5 structural elements on every page.-->
+	<body>
+		<!--Requirement: HTML5 structural elements on every page.-->
 		<header id="profile"><br />
-			<h1 style="text-align:center; color:darkgreen;">Hobbies</h1>
+			<h1>Hobbies</h1>
 		</header>
 			<!--Requirement 7: Create a consistent menu/navigation bar that is used on
 			all pages and contain links to the other pages.-->
@@ -27,8 +27,8 @@
 		      <a href="../form">Feedback</a> ||
 		</nav>
 		
-		<section style="margin-left: 200px; margin-right: 200px;">
-		<h4 style="color:darkgreen;">Sensory Projects:</h4>
+		<section>
+		<h4>Sensory Projects:</h4>
 		<p>
 			When I started working with kids I observed that the important physical sense most of the children enjoyed was sensory.
 			So I gradually started introducing such projects with the students in my class. The children not only enjoyed playing
@@ -36,7 +36,7 @@
 			lots of milestone developments with the children.
 		</p>
 		</section>
-		<section class="cont" style="margin-left: 200px; margin-right: 200px;">
+		<section>
 			<div id="app">
 				<figure>
 					<img class="a" v-bind:src='pic1' v-on:mousemove="update1" v-on:mouseleave="extract1"></img>
@@ -97,12 +97,27 @@
 				});
 		</script>
 		<style>
-			div{
+			p{
+				
+				box-sizing: border-box;
+				border-bottom: 2px solid darkgreen;
+			}
+			body{
+				background-color: lightgray;
+			} 
+			h1{
+				text-align:center; 
+				color:darkgreen;
+			}
+			section{
 				display: inline-flex;
 				flex-direction: column;
 				justify-content: space-around;
-				box-sizing: border-box;
-				border: 2px solid darkgreen;
+				margin-left: 200px; 
+				margin-right: 200px;
+			}
+			h4{
+				color:darkgreen;
 			}
 
 		</style>
