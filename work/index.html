@@ -47,6 +47,10 @@
 				text-shadow: 2px 2px 3px #666666; 
 				padding-bottom: 10px;
 			}
+			img{
+				border: 4px solid darkgreen;
+  				border-right: 4px solid chocolate;
+			}
 		</style> 
 		<section>
 			<div>
@@ -56,7 +60,7 @@
 		<section class="margin">
      			 <div id="app">
 				<figure>
-					<img class="a" v-bind:src='pic1' v-on:mousemove="update1" v-on:mouseleave="extract1"></img>
+					<img v-bind:src='pic1' v-on:mousemove="update1" v-on:mouseleave="extract1"></img>
 					<figcaption style="color:darkgreen;">CAT C10014657 Excavator</figcaption>
 				</figure>
 			</div>
@@ -105,7 +109,7 @@
 			<!--Reqirement: Include atleast one image on every page -->
 			<figure>
 				<span title="Award 2020">
-        				<img class="a" src="cskc.jpg" alt="Site Work" width="300px" height="300px" />
+        				<img src="cskc.jpg" alt="Site Work" width="300px" height="300px" />
 				</span>
      		 </figure>
 			<article>
