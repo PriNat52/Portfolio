@@ -32,7 +32,6 @@
 			} 
 			section{
 				display: inline-flex;
-				float: left;
 				margin-left: 200px; 
 				margin-right: 200px;
 			} 
@@ -51,15 +50,19 @@
 				padding-bottom: 10px;
 			}
 		</style> 
+		<section>
+			<div>
+				<h2>Software Engineer</h2>
+			</div>
+		</section>
 		<section class="margin">
-			<h2>Software Engineer</h2>
      			 <div id="app">
 				<figure>
 					<img class="a" v-bind:src='pic1' v-on:mousemove="update1" v-on:mouseleave="extract1"></img>
 					<figcaption style="color:darkgreen;">CAT C10014657 Excavator</figcaption>
 				</figure>
 			</div>
-			<article id="context">
+			<article>
 					<p class="c">
 						<h4>Work History:</h4>
 						<i>Assistant Programmer</i><br />
@@ -81,7 +84,7 @@
 		</section>
 		<h3>Technical Skills:</h3>
        		 <!--Requirement 6: Include atleast one list on atleast one page -->
-		<section style="margin-left: 60px;">
+		<section>
 	      	<ol class="list">
 	        <li>Programming Languages: C, C++, C#, Visual Basic, Python</li>
 	        <li>Web Application Tools: Javascript, JSON, HTML/XML</li>
@@ -103,7 +106,7 @@
         	<img src="cskc.jpg" alt="Site Work" width="300px" height="300px" />
 				</span>
      		 </figure>
-			<article id="context">
+			<article>
 				<p class="c"><h4>Work History:</h4>
 					<i>Infant/Toddler/Pre-School Teacher Sep 2016 to July 2019</i><br />
 					<a href="http://www.cedarstreetkidsclub.com/" target="_blank" title="Click to view the webpage">
@@ -117,7 +120,7 @@
 					<p class="b">I'm proud to say I was a part of CSKC team. My three years with CSKC
 						was amazing, I was able to meet excellent directors and co-workers that
 						helped in every obstacle I faced down the road.</p>
-				</article>
+			</article>
 		</section>
 		<script>
 		window.onscroll = function() {myFunction()};
