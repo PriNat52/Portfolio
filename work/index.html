@@ -6,8 +6,7 @@
 		<title>Work</title>
 		<!--Requirement: Every page must be styled using same external style sheet-->
 		<link rel="stylesheet" href="../style/style.css">
-		<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+		<script src="https://unpkg.com/vue"></script>
 	</head>
 	<body style="background-color:lightgray; margin-left: 200px; margin-right: 200px;">
    		 <!--Requirement: HTML5 structural elements on every page.-->
@@ -27,46 +26,16 @@
       			<a href="../teacher">Discussions</a> ||
       			<a href="../form">Feedback</a> ||
 		</nav>
-		<script type="module" src="https://unpkg.com/img-comparison-slider@3/dist/component/component.esm.js"></script>
-		<script nomodule="" src="https://unpkg.com/img-comparison-slider@3/dist/component/component.js"></script>
-		<link rel="stylesheet" href="https://unpkg.com/img-comparison-slider@3/dist/collection/styles/initial.css" />
-		<script>
-		window.onscroll = function() {myFunction()};
-
-		var navbar = document.getElementById("menu");
-		var sticky = navbar.offsetTop;
-
-		function myFunction() {
-  			if (window.pageYOffset >= sticky) {
-			document.getElementById("menu").style.backgroundColor="lightgray";
-    			navbar.classList.add("sticky")
-  			} else {
-			document.getElementById("menu").style.backgroundColor="transparent";
-    			navbar.classList.remove("sticky");
-  			}
-		}
-		</script>
-		<style type="text/css">
-  			img-comparison-slider {
-    			--divider-width: 2px;
-    			--divider-color: #c0c0c0;
-    			--handle-opacity: 0.3;
-  			}
-			
-		</style>
-		<section>
-			<div>
-				<h1 style="color:darkgreen; text-align:center; font-family: monospace; text-shadow: 2px 2px 3px #666666; padding-bottom: 10px;">Software Engineer</h2>
-			</div>
-		</section>
+		<div>
+			<h1 style="color:darkgreen; text-align:center; font-family: monospace; text-shadow: 2px 2px 3px #666666; padding-bottom: 10px;">Software Engineer</h2>
+		</div>
 		<section class="margin" style=" display: inline-flex; float: left;">
-     			 <!--Reqirement 4: Include atleast one image on every page [style="position:static; float:left; margin: 0;"] [<span title="C10014657 Excavator"></span><span title="Hosur Office"></span>]-->
-			<img-comparison-slider>
-				<img slot="before" src="C10014657excavator.jpg" width="57%" height="90%">
-				<img slot="after" src="6015bexc.jpg" width="80%" height="90%">
-			</img-comparison-slider>
-		</section>
-		<section>
+     			 <div id="app">
+				<figure>
+					<img class="a" v-bind:src='pic1' v-on:mousemove="update1" v-on:mouseleave="extract1"></img>
+					<figcaption style="color:darkgreen;">CAT C10014657 Excavator</figcaption>
+				</figure>
+			</div>
 			<article id="context">
 					<p class="c">
 						<h4 style="color:darkgreen;">Work History:</h4>
@@ -127,9 +96,39 @@
 						helped in every obstacle I faced down the road.</p>
 				</article>
 		</section>
-    <footer>
+		<script>
+		window.onscroll = function() {myFunction()};
+
+		var navbar = document.getElementById("menu");
+		var sticky = navbar.offsetTop;
+
+		function myFunction() {
+  			if (window.pageYOffset >= sticky) {
+			document.getElementById("menu").style.backgroundColor="lightgray";
+    			navbar.classList.add("sticky")
+  			} else {
+			document.getElementById("menu").style.backgroundColor="transparent";
+    			navbar.classList.remove("sticky");
+  			}
+			}
+			var app = new Vue({
+			  el:'#app',
+			  data:{
+			    pic1: "C10014657excavator.jpg"
+			    },
+			    methods:{
+			      update1: function(){
+			        this.pic1="6015bexc.jpg";
+			      },
+			      extract1: function(){
+			        this.pic1 = "C10014657excavator.jpg";
+			      }
+				}
+			});
+		</script>
+		<footer>
       			&copy; Gmmco Limited and Cedar Street Kids Club
 			<p id="note">printed from work.html</p>
-    </footer>
-  </body>
+		</footer>
+  	</body>
 </html>
