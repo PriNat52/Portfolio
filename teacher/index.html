@@ -4,28 +4,27 @@
     <meta charset="utf-8">
 		<meta name="description" content="width=device-width,initial_scale=1.0">
 		<title>Discussions</title>
-		<!--Require 1: Every page must be styled using same external style sheet-->
+		<!--Require : Every page must be styled using same external style sheet-->
 		<link rel="stylesheet" href="../style/style.css">
-	</head>
-	<body style="background-color:lightgray; clolor:rebeccapurple;">
-		<!--Requirement 3: HTML5 structural elements on every page.-->
+	</head> 
+	<body>
+		<!--Requirement: HTML5 structural elements on every page.-->
 		<header id="profile">
 			<br />
-			<h1 style="color:darkgreen; text-align: center;">CS601-Discussions</h1>
+			<h1>CS601-Discussions</h1>
 		</header>
 
-			<!--Requirement 7: Create a consistent menu/navigation bar that is used on
-			all pages and contain links to the other pages.-->
+			<!--Requirement : Create a consistent menu/navigation bar that is used on all pages and contain links to the other pages.-->
 		<nav id="menu">
 			||
 			<a href="../home">Home</a> ||
-      <a href="../bio">About Me</a> ||
-      <a href="../edu">Education</a> ||
-      <a href="../hobbies">Hobbies</a> ||
+			<a href="../bio">About Me</a> ||
+			<a href="../edu">Education</a> ||
+			<a href="../hobbies">Hobbies</a> ||
 			<a href="../gallery">Gallery</a> ||
-      <a href="../work">Work</a> ||
-      <a href="..">Discussions</a> ||
-      <a href="../form">Feedback</a> ||
+		       <a href="../work">Work</a> ||
+		       <a href="..">Discussions</a> ||
+		       <a href="../form">Feedback</a> ||
 		</nav>
 		<script>
 		window.onscroll = function() {myFunction()};
@@ -34,13 +33,13 @@
 		var sticky = navbar.offsetTop;
 
 		function myFunction() {
-  	if (window.pageYOffset >= sticky) {
-			document.getElementById("menu").style.backgroundColor="lightgray";
-    	navbar.classList.add("sticky")
-  	} else {
-			document.getElementById("menu").style.backgroundColor="transparent";
-    	navbar.classList.remove("sticky");
-  	}
+			if (window.pageYOffset >= sticky) {
+					document.getElementById("menu").style.backgroundColor="lightgray";
+			navbar.classList.add("sticky")
+			} else {
+					document.getElementById("menu").style.backgroundColor="transparent";
+			navbar.classList.remove("sticky");
+			}
 		}
 		</script>
 		<style>
@@ -62,18 +61,29 @@
 			  font-style: oblique;
 			  background-color: lightblue;
 			}
+			body{
+				background-color:lightgray; 
+				clolor:rebeccapurple;
+			} 
+			h1{
+				color:darkgreen; 
+				text-align: center;
+			}
+			h4,h5{
+				color:darkgreen;
+			}
 		</style>
-		<section class="main">
-			<!--Reqirement 4: Include atleast one image on every page -->
+		<section>
+			<!--Reqirement: Include atleast one image on every page -->
 			<figure>
-				<span title="Discussion">
-		       	<img src="D1.jpg" alt="Site Work" width="220px" height="220px" />
+				<span title="Discussion 1">
+		       		<img src="D1.jpg" alt="Site Work" width="220px" height="220px" />
 				</span>
-		  </figure>
-			<article id="context">
+		  	</figure>
+			<article>
 
-						<h4 style="color:darkgreen;">Discussion 1:</h4>
-						<h5 style="color:darkgreen;">Question:</h5>
+						<h4>Discussion 1:</h4>
+						<h5>Question:</h5>
 						<p class="a">Research an advanced text editor or integrated development environment (IDE) that is commonly used for web development.
 							Describe its core features, it’s pros/cons, unique qualities and/or features, price, software license type, platforms, etc.
 							Would you use this tool? Why or why not?Be sure to cite your sources.</p>
@@ -96,17 +106,17 @@
 					</article>
 				</section>
 
-				<section class="main">
-						<!--Reqirement 4: Include atleast one image on every page -->
+				<section>
+						<!--Reqirement: Include atleast one image on every page -->
 						<figure>
-							<span title="Award 2020">
-			        	<img src="D2.jpg" alt="Site Work" width="220px" height="220px" />
+							<span title="Discussion 2">
+			        				<img src="D2.jpg" alt="Site Work" width="220px" height="220px" />
 							</span>
-			      </figure>
-						<article id="context">
+			     			 </figure>
+						<article>
 
-							<h4 style="color:darkgreen;">Discussion 2:</h4>
-							<h5 style="color:darkgreen;">Question:</h5>
+							<h4>Discussion 2:</h4>
+							<h5>Question:</h5>
 							<p class="a">Select and read a recent (within 2-3 years) online article about CSS. A good article will focus on concepts not introduced in this week’s reading materials or significantly expand upon them.
 								Select two to three of the author’s main concepts and summarize them. The goal is for you to learn more about CSS and share this new knowledge with your classmates.
 								Be sure to cite your sources.</p>
@@ -128,17 +138,17 @@
 								</script>
 						</article>
 					</section>
-					<section class="main">
-							<!--Reqirement 4: Include atleast one image on every page -->
+					<section>
+							<!--Reqirement: Include atleast one image on every page -->
 							<figure>
-								<span title="Award 2020">
+								<span title="Discussion 3">
 									<img src="D3.jpg" alt="Site Work" width="220px" height="220px" />
 								</span>
 							</figure>
-							<article id="context">
+							<article>
 
-								<h4 style="color:darkgreen;">Discussion 3:</h4>
-								<h5 style="color:darkgreen;">Question:</h5>
+								<h4>Discussion 3:</h4>
+								<h5>Question:</h5>
 								<p class="a">Research and find two or more websites that use
 									JavaScript in fun and exciting ways. Share a description of how the JavaScript
 									 is used to enhance the page and visitor experience and share a link to the page.</p>
@@ -160,17 +170,17 @@
 			 						</script>
 							</article>
 						</section>
-						<section class="main">
-								<!--Reqirement 4: Include atleast one image on every page -->
+						<section>
+								<!--Reqirement: Include atleast one image on every page -->
 								<figure>
-									<span title="Award 2020">
+									<span title="Discussion 4">
 										<img src="D4.jpg" alt="Site Work" width="220px" height="220px" />
 									</span>
 								</figure>
-								<article id="context">
+								<article>
 
-									<h4 style="color:darkgreen;">Discussion 4:</h4>
-									<h5 style="color:darkgreen;">Question:</h5>
+									<h4>Discussion 4:</h4>
+									<h5>Question:</h5>
 									<p class="a">As you start to build more complex web applications,
 										you will likely come to find that you need to implement some type of software
 										 architecture pattern. One common example is when implementing user interfaces
@@ -198,18 +208,18 @@
 								});
 								</script>
 								</article>
-							</section>
-							<section class="main">
-									<!--Reqirement 4: Include atleast one image on every page -->
+						</section>
+						<section>
+									<!--Reqirement: Include atleast one image on every page -->
 									<figure>
-										<span title="Award 2020">
+										<span title="Discussion 5">
 											<img src="D5.jpg" alt="Site Work" width="220px" height="220px" />
 										</span>
 									</figure>
-									<article id="context">
+									<article>
 
-										<h4 style="color:darkgreen;">Discussion 5:</h4>
-										<h5 style="color:darkgreen;">Question:</h5>
+										<h4>Discussion 5:</h4>
+										<h5>Question:</h5>
 										<p class="a">We presented a few of the new features incorporated into ECMAScript 6, but certainly not all of them. Perform some research on an ES6 feature that was not discussed in depth in the lecture notes. You can see a list of other ES6 features in the lecture notes under the title of "Introduction to ES6 Feature".
 											Here are some questions to consider addressing in your response:
 									    What feature did you research?
@@ -233,9 +243,40 @@
 													});
 											</script>
 									</article>
-								</section>
-    <footer>
-			<p id="note">printed from discussions.html</p>
-    </footer>
-  </body>
+						</section>
+		<section>
+			<!--Reqirement: Include atleast one image on every page -->
+			<figure>
+				<span title="Discussion 6">
+		       		<img src="D6.jpg" alt="Site Work" width="220px" height="220px" />
+				</span>
+		  	</figure>
+			<article>
+
+						<h4>Discussion 6:</h4>
+						<h5>Question:</h5>
+						<p class="a">Read the article Vue vs. React in 2019: Which Framework to Choose and When that compares Vue and React. 
+							Comment on your experience with either. Also explain why certain vendors use React for instance or even Vue?</p>
+							<p id="d6"></p>
+							<button id="load6" formtarget="_blank">Read me</button>
+							<script>
+							document.getElementById("load6").addEventListener("click",function(){
+								let xhttp = new XMLHttpRequest();
+								xhttp.onreadystatechange = function () {
+								    if (this.readyState == 4 && this.status == 200) {
+								      let Text = this.responseText;
+									    window.open("d6.txt","_blank");
+								    }
+								  };
+								  xhttp.open("GET", "d6.txt", true);
+								  xhttp.send();
+								});
+								
+							</script>
+					</article>
+				</section>
+				    <footer>
+							<p id="note">printed from discussions.html</p>
+				    </footer>
+  	</body>
 </html>
