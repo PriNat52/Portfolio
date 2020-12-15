@@ -1,57 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-    <meta charset="utf-8">
+    		<meta charset="utf-8">
 		<meta name="description" content="width=device-width,initial_scale=1.0">
 		<title>Gallery</title>
-    <!--Require 1: Every page must be styled using same external style sheet-->
+   		 <!--Requirement : Every page must be styled using same external style sheet-->
 		<link rel="stylesheet" href="../style/style.css">
 		<style>
 		* {
 			  box-sizing: border-box;
 			}
-		body {
-		  font-family: Arial;
-		}
-		.column {
-		  width: 15%;
-		  padding: 10px;
-		}
+			body {
+			  font-family: Arial;
+			}
+			.column {
+			  width: 15%;
+			  padding: 10px;
+			}
 
-		.column img {
-		  opacity: 0.8;
-		  cursor: pointer;
-		}
+			.column img {
+			  opacity: 0.8;
+			  cursor: pointer;
+			}
 
-		.column img:hover {
-		  opacity: 1;
-		}
-		.row:left {
- 			position: relative;
-		}
+			.column img:hover {
+			  opacity: 1;
+			}
+			.row:left {
+				position: relative;
+			}
 
-		/* The expanding image container*/
-		.container {
-			margin-left: 200px;
-			position: absolute;
-		  	display: inline-flex;
-		}
+			/* The expanding image container*/
+			.container {
+				margin-left: 200px;
+				position: absolute;
+				display: inline-flex;
+			}
 
-		#caption {
-		  position: absolute;
-		  bottom: 15px;
-		  left: 15px;
-		  color: white;
-		  font-size: 20px;
-		}
+			#caption {
+			  position: absolute;
+			  bottom: 15px;
+			  left: 15px;
+			  color: white;
+			  font-size: 20px;
+			}
+			body{
+				background-color: lightgray;
+			} 
+			h1{
+				text-align: center; 
+				color:darkgreen;
+			}
+			h4{
+			color:darkgreen;
+			}
+			footer{
+				margin-left: 200px; 
+				margin-right: 200px;
+			}
 	</style>
-	</head>
-	<body style="background-color: lightgray; ">
-		<!--Requirement 3: HTML5 structural elements on every page.-->
+	</head> 
+	<body>
+		<!--Requirement : HTML5 structural elements on every page.-->
 		<header id="profile"><br />
-			<h1 style="text-align: center; color:darkgreen;">Gallery</h1>
+			<h1>Gallery</h1>
 		</header>
-			<!--Requirement 7: Create a consistent menu/navigation bar that is used on
+			<!--Requirement: Create a consistent menu/navigation bar that is used on
 			all pages and contain links to the other pages.-->
 		<nav id="menu">
 			||
@@ -71,16 +85,17 @@
 		var sticky = navbar.offsetTop;
 
 		function myFunction() {
-  	if (window.pageYOffset >= sticky) {
-			document.getElementById("menu").style.backgroundColor="lightgray";
-    	navbar.classList.add("sticky")
-  	} else {
-			document.getElementById("menu").style.backgroundColor="transparent";
-    	navbar.classList.remove("sticky");
-  	}
+			if (window.pageYOffset >= sticky) {
+					document.getElementById("menu").style.backgroundColor="lightgray";
+			navbar.classList.add("sticky")
+			} else {
+					document.getElementById("menu").style.backgroundColor="transparent";
+			navbar.classList.remove("sticky");
+			}
 		}
 		</script>
-<section>
+		<section>
+			<h4>Move your mouse over the pictures to view them.</h4>
 			<div class="container" >
 				<img id="biggerimg" style="width:90%;"/>
 				<div id="caption"></div>
@@ -111,8 +126,8 @@
 			imgAlt.innerHTML = imgs.alt;
 			bigImg.parentElement.style.display="block";
 		}
-		</script>
-		<footer style=" margin-left: 200px; margin-right: 200px;">
+		</script> 
+		<footer>
 			&copy; Unsplash.com
 		</footer>
 	</body>
