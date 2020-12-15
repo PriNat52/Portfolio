@@ -4,7 +4,7 @@ function Submit(){
   let firstName = document.getElementById("firstName").value;
   let firstNameError = document.getElementById("firstNameError");
   let lastNameError = document.getElementById("lastNameError");
-  let subjectNameError = document.getElementById("subjectrNameError");
+  let subjectNameError = document.getElementById("subjectNameError");
   let lastName = document.getElementById("lastName").value;
   let email = document.getElementById("subject").value;
   let thanks = document.getElementById("thanks");
