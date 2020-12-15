@@ -1,0 +1,13 @@
+
+
+Vue vs React 
+
+ I am new to Vue and React frameworks. I do not have any experience with either. Prior to this course, I have heard about React and Angular as the popular Javascript frameworks.The Blog was very well written and has good collection of data. After reading the article both Vue and React seems to have a striking top feature, elegant programming style and patterns, open source, licensed by MIT and written in Javascript.
+
+Why vendors use React or even Vue?
+ As a new web developer wanting to learn either React or Vue. Most of the articles I researched says Vue is a great option when developing dynamic application and Vue's syntax has a traditional seperation of concerns into HTML,CSS and JS makes it easier for beginner frontend developers to learn how to create web applications and vue's documentation is largely considered better. Whereas, React on the other hand, is solely JSX while the documentation is good. React is great for building complex enterprise grade applications.
+The Right Tool depends on your needs:
+ Just like the article says, both Vue and React are great tools for developing interactive user interfaces. Vue is on a par with React. However, final results essentially depend on optimization efforts and application size.
+Cite:
+https://blog.cloudboost.io/why-react-is-better-than-vue-js-and-when-9545049652d8
+
