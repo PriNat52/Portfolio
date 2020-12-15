@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-    <meta charset="utf-8">
+   		<meta charset="utf-8">
 		<meta name="description" content="width=device-width,initial_scale=1.0">
 		<title>Validation Form</title>
-		<!--Requirement 1: Style the page with CSS using an external style sheet.-->
+		<!--Requirement: Style the page with CSS using an external style sheet.-->
 		<link rel="stylesheet" href="../form/form.css">
 		<script src="../form/form.js" charset="utf-8"></script>
 	</head>
 	<body>
 		<header><br />
-			<h1 style="text-align: center; color:darkgreen;">Feedback</h1>
-
+			<h1>Feedback</h1>
 		</header>
 		<nav id="menu">
 			||
 			<a href="../home">Home</a> ||
-      <a href="../bio">About Me</a> ||
-      <a href="../edu">Education</a> ||
-      <a href="../hobbies">Hobbies</a> ||
+			<a href="../bio">About Me</a> ||
+			<a href="../edu">Education</a> ||
+			<a href="../hobbies">Hobbies</a> ||
 			<a href="../gallery">Gallery</a> ||
-      <a href="../work">Work</a> ||
-      <a href="../teacher">Discussions</a> ||
-      <a href="..">Feedback</a> ||
+			<a href="../work">Work</a> ||
+			<a href="../teacher">Discussions</a> ||
+			<a href="..">Feedback</a> ||
 		</nav>
 		<script>
 		window.onscroll = function() {myFunction()};
@@ -31,30 +30,43 @@
 		var sticky = navbar.offsetTop;
 
 		function myFunction() {
-  	if (window.pageYOffset >= sticky) {
-			document.getElementById("menu").style.backgroundColor="lightgray";
-    	navbar.classList.add("sticky")
-  	} else {
-			document.getElementById("menu").style.backgroundColor="transparent";
-    	navbar.classList.remove("sticky");
-  	}
+			if (window.pageYOffset >= sticky) {
+					document.getElementById("menu").style.backgroundColor="lightgray";
+			navbar.classList.add("sticky")
+			} else {
+					document.getElementById("menu").style.backgroundColor="transparent";
+			navbar.classList.remove("sticky");
+			}
 		}
 		</script>
-		<!--Requirement 1: The form action-->
-		<form name="contact" style=" margin-left: 100px; " method="post" novalidate onsubmit="return Submit();" netlify>
+		<style>
+			form{
+				margin-left: 100px; 
+			}
+			footer{
+				color:darkgreen; 
+				margin-left: 100px;
+			}
+			h1{
+				text-align: center; 
+				color:darkgreen;
+			}
+		</style>
+		<!--Requirement : The form action-->
+		<form name="contact" method="post" novalidate onsubmit="return Submit();" netlify>
 			<div id="firstNameError" class="firstErrorclass" style="background-color:red;" >
 				<span style="display:none">
-					Reminder: First Name should be more than (2) ALPHABETS.<br />
+					Reminder: First Name should be more than (2) ALPHABETS. Refresh to start again.<br />
 				</span>
 			</div>
 			<div id="lastNameError" class="lastErrorclass" style="background-color:red;" >
 				<span style="display:none">
-					Reminder: Last Name should be more than (2) ALPHABETS.<br />
+					Reminder: Last Name should be more than (2) ALPHABETS. Refresh to start again.<br />
 				</span>
 			</div>
 			<div id="subjectNameError" class="subjectErrorclass" style="background-color:red;">
 				<span style="display:none">
-					Reminder: Please check your E-mail Id.<br />
+					Reminder: Please check your E-mail Id. Refresh to start again.<br />
 				</span>
 			</div>
 			<div id="thanks" class="thanks" style="color:tan;">
@@ -63,20 +75,16 @@
 				</span>
 			</div>
 			<p>
-				<!--Requirement 1: text input field with a name and id value-->
+				<!--Requirement : text input field with a name and id value-->
 				First Name*:<br />
 				<input type="text" name="firstName" id="firstName" onmousemove="move(event)" size="35" maxlength="30" /><br />
-				<!--Requirement 1: text input field with a name and id value-->
+				<!--Requirement : text input field with a name and id value-->
 				<br />Last Name*:<br />
 				<input type="text" name="lastName" id="lastName" onmousemove="move(event)" size="35" maxlength="30" /><br />
-				<!--Requirement 1: text input field with a name and id value
-				Requirement 2: facilitator is a text input, not a select or any other type of input-->
+				<!-- Validates email id -->
 				<br />E-mail:<br />
 				<input type="text" name="subject"  id="subject" onmousemove="move(event)" size="35" maxlength="30" />
 			</p>
-			<!--Requirement 1: a group of radio buttons with your choice of options-->
-
-			<!--Requirement 1: a group of check boxes with your choice of values-->
 			<p>Leave me a Message with your contact details:<br />
 				<textarea name="message"  id="message" onmousemove="move(event)" rows="5" cols="35">
 				</textarea>
@@ -94,7 +102,7 @@
 			<label>* - Required field</label>
 			<input type="hidden" name="contact" value="contact">
 		</form>
-		<footer style="color:darkgreen; margin-left: 100px; ">
+		<footer>
 			<br />
 			&copy; Unsplash.com
 		</footer>
