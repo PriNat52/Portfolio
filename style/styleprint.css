@@ -1,19 +1,19 @@
-/*Requirement 1: Every page must be styled using same external style sheets */
-/*Requirement 2: Two(2) style sheets will be required */
+/*Requirement: Every page must be styled using same external style sheets */
+/*Requirement: Two(2) style sheets will be required */
 body {
  margin:0;
  padding:0;
  color: black;
  background: #FFFFFF;
  font-size: 18px;
- Font-family: fantasy , Times, serif;
+ Font-family: arial;
 }
-/*Requirement 2c:atleast three(3) distinct differences between sheets*/
+/*Requirement:atleast three(3) distinct differences between sheets*/
 #profile{
   text-shadow: none;
   padding-bottom: 10px;
 }
-/*Requirement 2c:atleast three(3) distinct differences between sheets*/
+/*Requirement:atleast three(3) distinct differences between sheets*/
 #menu:hover{
   color: black;
   font-size: 18px;
@@ -102,7 +102,7 @@ img.b{
   align-items: center;
   justify-content: center;
 }
-/*Requirement 2c:atleast three(3) distinct differences between sheets*/
+/*Requirement:atleast three(3) distinct differences between sheets*/
 #note{
   display: block;
   text-align: center;
