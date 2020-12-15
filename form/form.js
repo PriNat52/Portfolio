@@ -24,6 +24,7 @@ function Submit(){
     subjectNameError.innerHTML = subjectNameError.textContent;
     return false;
   }
+  return true;
 }
 
 function move(e){
