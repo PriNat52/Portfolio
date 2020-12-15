@@ -1,5 +1,5 @@
-/*Requirement 1: Every page must be styled using same external style sheets */
-/*Requirement 2: Two(2) style sheets will be required */
+/*Requirement: Every page must be styled using same external style sheets */
+/*Requirement: Two(2) style sheets will be required */
 body{
   padding: 0;
   color: rebeccapurple;
@@ -7,7 +7,7 @@ body{
   font-family: sans-serif;
   align-content: center;
 }
-/* Requirement3: Use selectors to style all appropriate elements on all pages
+/* Requirement: Use selectors to style all appropriate elements on all pages
 and Providing more than one property:value pair for each element*/
 #profile{
   font-family: monospace;
@@ -74,14 +74,7 @@ a:hover{
   text-decoration: underline;
 }
 
-/*.active {
-  background-color: hsl(30, 100%, 50%);
-   #dddddd 
-    hsl(30, 100%, 50%)
-   text-align: left;
-
-}*/
-/* Requirement3: Use selectors to style all appropriate elements on all pages*/
+/* Requirement: Use selectors to style all appropriate elements on all pages*/
 h1{
   color: darkgreen;
   text-align: center;
@@ -90,7 +83,7 @@ h1{
 h3{
   color: darkgreen;
 }
-/*Requirement 4: Be creative*/
+/*Requirement: Be creative*/
 video{
   object-fit: cover;
   position: fixed;
@@ -110,7 +103,7 @@ video{
     background-size: cover;
   }
 }
-/* Requirement3: Use selectors to style all appropriate elements on all pages*/
+/* Requirement: Use selectors to style all appropriate elements on all pages*/
 .a{
   white-space: normal;
   font-family: arial;
@@ -206,17 +199,6 @@ img.b{
   display: inline-flex;
   align-items: justify;
 }
-/*Requirement 4: Be creative
-#alpha:hover, #beta:hover, #gama:hover{
- background-color: lightgray;
- border-left: double;
-   color: rgb(214, 122, 127);
- animation: mymove 5s infinite;
-}
-@keyframes mymove {
- from {background-color: lightgray;}
- to {background-color: lightblue;}
-}*/
 footer{
   position:fixed;
   bottom: 0;
