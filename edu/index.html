@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-    <meta charset="utf-8">
+    		<meta charset="utf-8">
 		<meta name="description" content="width=device-width,initial_scale=1.0">
 		<title>Education</title>
-		<!--Require 1: Every page must be styled using same external style sheet-->
+		<!--Requirement: Every page must be styled using same external style sheet-->
 		<link rel="stylesheet" href="../style/style.css">
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script src="script.js"></script>
-	</head>
-	<body style="background-color: lightgray">
-    <!--Requirement 3: HTML5 structural elements on every page.-->
+	</head> 
+	<body>
+    		<!--Requirement: HTML5 structural elements on every page.-->
 		<header id="profile"><br />
-			<h1 style="text-align:center;color: darkgreen;">Education</h1>
+			<h1>Education</h1>
 		</header>
-      <!--Requirement 7: Create a consistent menu/navigation bar that is used on
-			all pages and contain links to the other pages.-->
+      		<!--Requirement: Create a consistent menu/navigation bar that is used on all pages and contain links to the other pages.-->
 		<nav id="menu">
 			||
 			<a href="../home">Home</a> ||
-      <a href="../bio">About Me</a> ||
-      <a href="..">Education</a> ||
-      <a href="../hobbies">Hobbies</a> ||
+		        <a href="../bio">About Me</a> ||
+			<a href="..">Education</a> ||
+			<a href="../hobbies">Hobbies</a> ||
 			<a href="../gallery">Gallery</a> ||
-      <a href="../work">Work</a> ||
-      <a href="../teacher">Discussions</a> ||
-      <a href="../form">Feedback</a> ||
+		       <a href="../work">Work</a> ||
+		       <a href="../teacher">Discussions</a> ||
+		       <a href="../form">Feedback</a> ||
 		</nav>
 		<script>
 		window.onscroll = function() {myFunction()};
@@ -34,22 +33,53 @@
 		var sticky = navbar.offsetTop;
 
 		function myFunction() {
-  	if (window.pageYOffset >= sticky) {
-			document.getElementById("menu").style.backgroundColor="lightgray";
-    	navbar.classList.add("sticky")
-  	} else {
-			document.getElementById("menu").style.backgroundColor="transparent";
-    	navbar.classList.remove("sticky");
-  	}
+			if (window.pageYOffset >= sticky) {
+					document.getElementById("menu").style.backgroundColor="lightgray";
+			navbar.classList.add("sticky")
+			} else {
+					document.getElementById("menu").style.backgroundColor="transparent";
+			navbar.classList.remove("sticky");
+			}
 		}
 		</script>
+		<style> 
+			body{
+				background-color: lightgray;
+			} 
+			h1{
+				text-align:center;
+				color: darkgreen;
+			}
+			article{
+				display: inline-flex; 
+				float: left; 
+				margin-left: 200px; 
+				margin-right: 200px;
+			}
+			button{
+				height: 50px;
+			}
+			button:hover{
+			  color: rgb(214, 122, 127);
+			  font-style: oblique;
+			  background-color: lightblue;
+			}
+			aside{
+				text-align:center;
+			}
+			footer{
+				margin-left: 200px; 
+				margin-right: 200px;
+			}
+		</style>
+		<!--Ajax table -->
 		<section class="main" >
 			<div id="result" class="t">
 			</div><br />
-		</section>
-		<article style="display: inline-flex; float: left; margin-left: 200px; margin-right: 200px;"" >
-			<!--Reqirement 4: Include atleast one image on every page-->
-      <figure>
+		</section> 
+		<article >
+			<!--Reqirement: Include atleast one image on every page-->
+   			<figure>
 				<img class="a" src="../extras/photo-grad.jpg" width="600px" height="200px" />
 			</figure>
 			<p class="a" style="float:left;">
@@ -59,20 +89,11 @@
 				After moving to United States, I completed few courses for the teacher certification in
 				MassBay Community college. In 2020, I've joined MET Boston University to do Master's in Software Development.
 			</p>
-		</article>
-		<aside style="text-align:center;">
+		</article> 
+		<!-- Ajax Resume connection -->
+		<aside>
 		<p>Click on the button below to view my Resume </p>
 		<button id="load" formtarget="_blank">Resume</button>
-		<style>
-			button{
-				height: 50px;
-			}
-			button:hover{
-			  color: rgb(214, 122, 127);
-			  font-style: oblique;
-			  background-color: lightblue;
-			}
-		</style>
 		<script>
 			document.getElementById("load").addEventListener("click",function(){
 			let xhttp = new XMLHttpRequest();
@@ -86,8 +107,8 @@
 				 xhttp.send();
 				});
 		</script>
-	</aside>
-		<footer style=" margin-left: 200px; margin-right: 200px;">
+	</aside> 
+		<footer>
 			&copy; unsplash.com
 			<p id="note">printed from edu.html</p>
 		</footer>
