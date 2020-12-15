@@ -14,13 +14,13 @@ iv.Send the request to the server */
     console.log("Exit: Records cannot be found");
     return false;
   }
-  /*Requirement v.Process the returned JSON data using JavaScript */
+  /*Requirement.Process the returned JSON data using JavaScript */
    httpRequest.onreadystatechange = function() {
      if(httpRequest.readyState === XMLHttpRequest.DONE){
 
        console.log('in function');
        if (httpRequest.status === 200){
-         /* Requirement vi.Update the page content
+         /* Requirement.Update the page content
          1.The JSON data must be displayed in a HTMLtable. */
          console.log('inside 200');
          
@@ -44,7 +44,7 @@ iv.Send the request to the server */
          console.log("problem with ready state");
        }
    };
-   /*Requirement iii.Write the code to create the request for your JSON data on the server
+   /*Requirement.Write the code to create the request for your JSON data on the server
    (you must first upload it to the server using FTP) */
    httpRequest.open('GET','data.json');
    httpRequest.send();
