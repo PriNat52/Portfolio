@@ -1,65 +1,63 @@
-PRIYANKA GNANASEKARAN
-Mobile: 978-549-5705 E-mail: priya.nat52@gmail.com
+PRIYANKA GNANASEKARAN 
+(978)-549-5705 || priya.nat52@gmail.com linkedin.com/in/priyanka-gp || github.com/PriNat52 
 
-Career Objective:
-An entry-level software development position that utilizes my technical skills, education,
-experience and passion for solving interesting problems and transforming complication
-into simplicity
+Summary 
+Software Engineer currently pursuing Masters in Software Development with fundamental knowledge  of software design, development, and testing. Seeking to utilize a broad educational background with  technical, programming and problem solving skills to thrive as an entry-level software engineer. 
 
-Education:
+SKILLS 
+• Programming Languages: Javascript, Node.js, Express,Java, Python, HTML, CSS, AJAX,  JSON, C#, C++, C 
+• Database: MongoDB, SQL Server 2005, Oracle, MySQL
+• Frameworks: Vue.js, ASP.Net 
+• Development Tools/Operating Systems: Eclipse, Visual Studio, Atom,Windows 
+• Debugging and Logging Tools: JUnit, Log4j 
+• SDLC Tools: Github, Pivot Tracker 
+
+EDUCATION 
+MET Boston University, Boston, MA                     Sep 2020 - May 2022 Master of Science in Software Development                               GPA: 3.63 
+
+Relevant Coursework: Information Structures with Python, Data Structures and Algorithms (Java),  Advanced Programming Techniques (Java), Software Design and Patterns (Java), Web Application  Development (DHTML, AJAX with XML and JSON), Server-Side Web Development (PHP, MySQL, Node.js, MongoDB), Software Engineering (MERN) ,Database Design and Implementation for Business (Oracle) 
+
+TJ Institute of Technology, Anna University, Tamil Nadu, India             2005-2009
 Bachelor of Engineering - Computer Science
-T.J Institute of Technology (affiliated to Anna University)
-TamilNadu-India
 
-Technical Skills: 
-Programming Languages: C, C++, C#, Visual Basic
-Web Application Tools: Javascript, HTML
-Database: SQL Server 2005
-Frameworks: ASP .Net framework
-Development Tools: Microsoft .Net 3.0, Textpad, HTML editor
-Operating Systems:Windows, MS - DOS
-MS Tools: Office, Excel, Powerpoint
+PROJECTS  
+Diary Library https://diary-library.herokuapp.com/ | MET Boston University     Sept - Oct 2021 
+This application was made modular and broken into 3 components: api as the Express backend,  database for connecting to the MongoDB Cloud, and client for our front-end React application. Diary  Library (DL) is a simple to use, feature rich, and privacy focused note taking application.
 
-Work History:
-Assistant Programmer/Developer
-GMMCO (CATERPILLAR) LIMITED – Tamilnadu, India
-Feb 2010 to July 2010
+Airline Ticket Reservation | MET Boston University                 July - August 2021 
+This application is built with the basic idea of booking or canceling tickets in domestic and  international flights with Bridge pattern. For the use case scenario, when the customer wants to edit  his/her name or change the number of seats in their reserved ticket is implementing the Decorator pattern.  Developed using Java, Eclipse IDE. 
 
-Project Title: Machine Tracker
-Machine Tracker is a web enabled application developed to keep track of mining
-machines available at CAT customer sites all over India. This project is used by the
-service department and it also helps them to check time duration of delivery. Developed
-using C# and asp.net with SQL database.
+Online Shopping Cart | MET Boston University                     January-Feb 2021
+This application was developed in the forced member sign-in shopping style, where the inventory of  shop items is available for viewing to the public and requests for sign in details before purchase of any  items from the shop. Developed using Node.js and MongoDB.
 
-Role/Responsibility:
-Involved in requirement gathering and was responsible for the Analysis, Design and 
-Development of the System
-Developed Interactive GUI screens
-Involved in Use case Reviews, Design Reviews and Code Reviews.
+Portfolio https://priyan-at.netlify.app/ | MET Boston University             Nov-Dec 2020 
+This web application contains nine web pages of my portfolio which was hosted using Netlify and was  developed using HTML, AJAX with XML, JSON and Vue for pictures. 
 
-End-to-End development
-Testing
-Live support of the production application. Analyzed and resolved the Production
-Incidents.
+Home Expense and Retirement Calculator | MET Boston University         Sept-Oct 2020 
+This project focuses on three main features. They are savings calculation from income/expenses,  retirement calculation and updating the retirement calculation to the text file. Developed using Python. 
 
-Project Title: Daily Job Log.
-Record daily activities of service technicians on an hourly basis. This application is used
-by service department to keep track of technicians job log on a daily basis and helps
-finance department with their monthly billing purposes. This project was developed as a
-web based application using asp.net and c#.net as front-end and SQL as back-end.
+PROFESSIONAL EXPERIENCE 
+Assistant Programmer | Developer 
+GMMCO (CATERPILLAR) LIMITED - Chennai, India             February 2010-July 2010 
 
-Role/Responsibility:
-Involved in requirement gathering and was responsible for the Analysis, Design and Development.
-Developed Interactive GUI screens
-Involved in Use case Reviews, Design Reviews and Code Reviews.
+Machine Tracker 
+Machine Tracker is a web enabled application developed to keep track of mining machines available at  CAT customer sites all over India. This project was for the service department and it also helps them to check the time duration of delivery. Developed using C# and ASP.Net with SQL database. 
+Involved in requirement gathering and was responsible for the Analysis, Design and  Development of the System 
+Developed Interactive GUI screens 
+Involved in Use case Reviews, Design Reviews and Code Reviews 
+End-to-End development and testing 
+Live support of the production application.  
+Analyzed and resolved the Production Incidents. 
 
-End-to-End development
-Testing
+Daily Job Log 
+Record daily activities of service technicians on an hourly basis. This application is used by the service  department to keep track of technicians' job log on a daily basis and helps the finance department with their monthly billing purposes. This project was developed as a web based application using ASP.Net and  C#.Net as front-end and SQL as back-end. 
+Involved in requirement gathering and was responsible for the Analysis, Design and  Development 
+Developed Interactive GUI screens 
+Involved in Use case Reviews, Design Reviews and Code Reviews 
+End-to-End development and Testing
 
-Internship:
-SANDS PVT LTD
-Tamilnadu, India
-Project Title: Casualty Messenger.
-Casualty Messenger prime purpose is to save precious human life. It uses sensors
-to detect the location of accidents and transmit this information to the nearest hospital
-/ ambulance service. Developed using c#.net, asp.net, html and SQL.
+Early Education Teacher                            
+CSKC, 300 Eliot Street, Ashland MA                    Sept 2016 - July 2019
+Created a collaborative learning environment with students of varying backgrounds while building an atmosphere of respect and rapport
+Collaborated with other staff to create, implement, and co-teach engaging and creative lessons in which the students' learning styles and zones of proximal development were nurtured
+Supported students with Individual Education Plans by appropriately scaffolding lessons while maintaining high expectations
