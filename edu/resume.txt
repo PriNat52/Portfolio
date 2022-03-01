@@ -13,7 +13,8 @@ SKILLS
 • SDLC Tools: Github, Pivot Tracker 
 
 EDUCATION 
-MET Boston University, Boston, MA                     Sep 2020 - May 2022 Master of Science in Software Development                               GPA: 3.63 
+MET Boston University, Boston, MA                     Sep 2020 - May 2022 
+Master of Science in Software Development                               GPA: 3.63 
 
 Relevant Coursework: Information Structures with Python, Data Structures and Algorithms (Java),  Advanced Programming Techniques (Java), Software Design and Patterns (Java), Web Application  Development (DHTML, AJAX with XML and JSON), Server-Side Web Development (PHP, MySQL, Node.js, MongoDB), Software Engineering (MERN) ,Database Design and Implementation for Business (Oracle) 
 
